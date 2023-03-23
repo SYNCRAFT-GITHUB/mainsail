@@ -11,6 +11,6 @@
 
 ## Credit and Sources
 
-This is a legal modification of mainsail adapted for Syncraft printers. All rights are reserved to the original creators of the Software, under the AGPL-3.0 use and distribution license. If you want to see the original repository or the proper creators, access the official repository
+This is a legal modification of mainsail adapted for Syncraft printers. All rights are reserved to the original creators of the Software, under the AGPL-3.0 use and distribution license. If you want to see the original repository or the proper creators, access the official repository with the link below.
 
 [Official Repository](https://github.com/mainsail-crew/mainsail)
