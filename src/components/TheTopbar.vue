@@ -343,10 +343,6 @@ export default class TheTopbar extends Mixins(BaseMixin) {
 </script>
 
 <style>
-/* invert the color of the main logo */
-.nav-logo {
-    filter: invert()
-}
 /*noinspection CssUnusedSymbol*/
 .topbar .v-toolbar__content {
     padding-top: 0 !important;
