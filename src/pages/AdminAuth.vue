@@ -8,13 +8,13 @@
                 </div>
             </div>
             <div class="login-buttons">
-                <button :class="{ 'shake': buttonClick }" @click="login">UNLOCK</button>
+                <button :class="{ 'shake': buttonClick }" @click="login">{{ $t('JobQueue.Start') }}</button>
             </div>
         </div>
         <div v-else-if="isLoggedIn">
             <div class="lock-buttons">
                 <button @click="lock">
-                    <h1>LOCK ADMINISTRATOR ACCESS</h1>
+                    <h1>{{ $t('Router.Lock') }}</h1>
                     <div v-if="timerRunning">{{ timer }}</div>
                 </button>
             </div>
@@ -170,6 +170,7 @@ export default {
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .lock-buttons button {
@@ -179,5 +180,6 @@ export default {
     padding: 17px;
     border-radius: 12px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 </style>

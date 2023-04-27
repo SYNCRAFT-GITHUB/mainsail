@@ -90,7 +90,7 @@
                                     </v-list-item-icon>
                                     <v-list-item-content>
                                         <v-list-item-title tile class="menu-item-title">
-                                            {{ $t(` ${category.title}`) }}
+                                            {{ $t(`Router.${category.title}`) }}
                                         </v-list-item-title>
                                     </v-list-item-content>
                                 </v-list-item>

@@ -96,7 +96,9 @@
             "ServiceControl": "КОНТРОЛЬ Сервісів",
             "Shutdown": "Вимкнути",
             "Start": "Старт",
-            "Stop": "Стоп"
+            "Stop": "Стоп",
+            "Admin": "Адміністратор",
+            "Authentication": "Аутентифікація"
         },
         "UpdateDialog": {
             "Close": "Закрити",
@@ -646,7 +648,12 @@
         "Machine": "Машина",
         "Printers": "Принтери",
         "Timelapse": "Таймлапс",
-        "Webcam": "Веб-камера"
+        "Webcam": "Веб-камера",
+        "Updates": "Оновлення",
+        "Update": "Оновити",
+        "Syncraft": "компанії",
+        "Suporte": "Підтримка",
+        "Lock": "Замкнути"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Додати Принтер",

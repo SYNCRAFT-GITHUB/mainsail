@@ -111,9 +111,9 @@
                     </v-list-item-action>
                 </v-list-item>
                 <v-divider class="mt-0"></v-divider>
-                    <v-subheader class="pt-2" style="height: auto">{{ $t('Admin') }}</v-subheader>
+                    <v-subheader class="pt-2" style="height: auto">{{ $t('App.TopCornerMenu.Admin') }}</v-subheader>
                     <v-list-item router to="/authAdmin" class="minheight30 pr-2" >
-                        <v-list-item-title>{{ $t('Authentication') }}</v-list-item-title>
+                        <v-list-item-title>{{ $t('App.TopCornerMenu.Authentication') }}</v-list-item-title>
                             <v-list-item-action class="my-0 d-flex flex-row" style="min-width: auto">
                         <v-icon class="mr-2" small>{{ mdiToggleSwitch }}</v-icon>
                     </v-list-item-action>

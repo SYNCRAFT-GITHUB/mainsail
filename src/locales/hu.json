@@ -95,7 +95,9 @@
             "ServiceControl": "Szolgáltatások vezérlése",
             "Shutdown": "Leállítás",
             "Start": "Start",
-            "Stop": "Stop"
+            "Stop": "Stop",
+            "Admin": "Adminisztrátor",
+            "Authentication": "Hitelesítés"
         },
         "UpdateDialog": {
             "Close": "Bezárás",
@@ -634,7 +636,12 @@
         "Machine": "Gép",
         "Printers": "Nyomtatók",
         "Timelapse": "Idővonal",
-        "Webcam": "Webkamera"
+        "Webcam": "Webkamera",
+        "Updates": "Frissítések",
+        "Update": "Aktualizálni",
+        "Syncraft": "Syncraft",
+        "Suporte": "Támogatás",
+        "Lock": "Bezárni"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Nyomtató hozzáadása",

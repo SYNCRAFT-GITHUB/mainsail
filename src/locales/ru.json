@@ -95,7 +95,9 @@
             "ServiceControl": "Контроль обслуживания",
             "Shutdown": "Выключение",
             "Start": "Начало",
-            "Stop": "Стоп"
+            "Stop": "Стоп",
+            "Admin": "Администратор",
+            "Authentication": "Аутентификация"
         },
         "UpdateDialog": {
             "Close": "закрыть",
@@ -635,7 +637,12 @@
         "Machine": "Машина",
         "Printers": "Принтер",
         "Timelapse": "Time-lapse",
-        "Webcam": "Веб-камера"
+        "Webcam": "Веб-камера",
+        "Updates": "Обновления",
+        "Update": "Обновить",
+        "Syncraft": "компания",
+        "Suporte": "Поддерживать",
+        "Lock": "Закрывать"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Добавить принтер",

@@ -73,7 +73,9 @@
             "ServiceControl": "Controllo Servizi",
             "Shutdown": "Arresta",
             "Start": "Avvia",
-            "Stop": "Ferma"
+            "Stop": "Ferma",
+            "Admin": "Amministratore",
+            "Authentication": "Autenticazione"
         },
         "UpdateDialog": {
             "Close": "Chiudi",
@@ -528,7 +530,12 @@
         "Machine": "Macchina",
         "Printers": "Stampanti",
         "Timelapse": "Timelapse",
-        "Webcam": "Webcam"
+        "Webcam": "Webcam",
+        "Updates": "Aggiornamenti",
+        "Update": "Aggiornare",
+        "Syncraft": "Syncraft",
+        "Suporte": "Supporto",
+        "Lock": "Chiudere"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Aggiungi Stampante",

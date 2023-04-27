@@ -96,7 +96,9 @@
             "ServiceControl": "Services",
             "Shutdown": "Luk ned",
             "Start": "Start",
-            "Stop": "Stop"
+            "Stop": "Stop",
+            "Admin": "Kommandør",
+            "Authentication": "Godkendelse"
         },
         "UpdateDialog": {
             "Close": "Luk",
@@ -704,7 +706,12 @@
         "Machine": "Printer",
         "Printers": "Printere",
         "Timelapse": "Timelapse",
-        "Webcam": "Webcam"
+        "Webcam": "Webcam",
+        "Updates": "Opdateringer",
+        "Update": "At opdatere",
+        "Syncraft": "Syncraft",
+        "Suporte": "Support",
+        "Lock": "Låse"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Tilføj Printer",

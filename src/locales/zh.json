@@ -96,7 +96,9 @@
             "ServiceControl": "服务控制",
             "Shutdown": "关闭",
             "Start": "启动",
-            "Stop": "停止"
+            "Stop": "停止",
+            "Admin": "行政人员",
+            "Authentication": "验证"
         },
         "UpdateDialog": {
             "Close": "关闭",
@@ -704,7 +706,12 @@
         "Machine": "机器",
         "Printers": "打印机",
         "Timelapse": "延时摄影",
-        "Webcam": "摄像头"
+        "Webcam": "摄像头",
+        "Updates": "更新",
+        "Update": "更新",
+        "Syncraft": "Syncraft",
+        "Suporte": "支持",
+        "Lock": "锁定"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "添加打印机",

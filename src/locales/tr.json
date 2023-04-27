@@ -96,7 +96,12 @@
             "ServiceControl": "Hizmet Kontrolü",
             "Shutdown": "Kapat",
             "Start": "Başlat",
-            "Stop": "Durdur"
+            "Stop": "Durdur",
+            "Updates": "Güncellemeler",
+            "Update": "Güncellemek için",
+            "Syncraft": "Syncraft",
+            "Suporte": "Destek",
+            "Lock": "kapalı"
         },
         "UpdateDialog": {
             "Close": "Kapat",
@@ -672,7 +677,9 @@
         "Machine": "Makine",
         "Printers": "Yazıcılar",
         "Timelapse": "Timelapse",
-        "Webcam": "Web Kamerası"
+        "Webcam": "Web Kamerası",
+        "Admin": "yönetici",
+        "Authentication": "Erişim"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Yazıcı Ekle",

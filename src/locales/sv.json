@@ -95,7 +95,9 @@
             "ServiceControl": "Tjänstekontroll",
             "Shutdown": "Stäng av",
             "Start": "Starta",
-            "Stop": "Stoppa"
+            "Stop": "Stoppa",
+            "Admin": "Administratör",
+            "Authentication": "Autentisering"
         },
         "UpdateDialog": {
             "Close": "Stäng",
@@ -541,7 +543,12 @@
         "Machine": "Maskin",
         "Printers": "Skrivare",
         "Timelapse": "Timelapse",
-        "Webcam": "Webbkamera"
+        "Webcam": "Webbkamera",
+        "Updates": "Uppdateringar",
+        "Update": "Att uppdatera",
+        "Syncraft": "Syncraft",
+        "Suporte": "Stöd",
+        "Lock": "Att låsa"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Lägg till skrivare",

@@ -41,7 +41,9 @@
             "PowerDevices": "功率元件",
             "Reboot": "重啟",
             "ServiceControl": "服務控制",
-            "Shutdown": "關機"
+            "Shutdown": "關機",
+            "Admin": "行政人員",
+            "Authentication": "驗證"
         },
         "UpdateDialog": {
             "Close": "關閉",
@@ -477,7 +479,12 @@
         "Machine": "機器",
         "Printers": "列印機",
         "Timelapse": "縮時",
-        "Webcam": "網絡攝影機"
+        "Webcam": "網絡攝影機",
+        "Updates": "更新",
+        "Update": "更新",
+        "Syncraft": "Syncraft",
+        "Suporte": "支持",
+        "Lock": "鎖定"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "新增列印機",

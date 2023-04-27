@@ -96,7 +96,9 @@
             "ServiceControl": "서비스 제어",
             "Shutdown": "종료",
             "Start": "시작",
-            "Stop": "종료"
+            "Stop": "종료",
+            "Admin": "관리자",
+            "Authentication": "입증"
         },
         "UpdateDialog": {
             "Close": "닫기",
@@ -636,7 +638,12 @@
         "Machine": "머신 설정",
         "Printers": "원격 프린터",
         "Timelapse": "타임랩스",
-        "Webcam": "웹캠"
+        "Webcam": "웹캠",
+        "Updates": "업데이트",
+        "Update": "업데이트하려면",
+        "Syncraft": "회사",
+        "Suporte": "지원하다",
+        "Lock": "잠그려면"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "프린터 정보 추가",

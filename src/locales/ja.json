@@ -97,7 +97,9 @@
             "ServiceControl": "サービス制御",
             "Shutdown": "シャットダウン",
             "Start": "始動",
-            "Stop": "停止"
+            "Stop": "停止",
+            "Admin": "管理者",
+            "Authentication": "認証"
         },
         "UpdateDialog": {
             "Close": "クローズ",
@@ -705,7 +707,12 @@
         "Machine": "機器",
         "Printers": "プリンター",
         "Timelapse": "タイムラプス",
-        "Webcam": "カメラ"
+        "Webcam": "カメラ",
+        "Updates": "アップデート",
+        "Update": "更新するには",
+        "Syncraft": "会社",
+        "Suporte": "サポート",
+        "Lock": "ロックする"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "プリンター追加",

@@ -96,7 +96,9 @@
             "ServiceControl": "Services Beheer",
             "Shutdown": "Afsluiten",
             "Start": "Start",
-            "Stop": "Stop"
+            "Stop": "Stop",
+            "Admin": "Beheerder",
+            "Authentication": "Authenticatie"
         },
         "UpdateDialog": {
             "Close": "Sluiten",
@@ -704,7 +706,12 @@
         "Machine": "Machine",
         "Printers": "Printers",
         "Timelapse": "Timelapse",
-        "Webcam": "Webcam"
+        "Webcam": "Webcam",
+        "Updates": "Updates",
+        "Update": "Update",
+        "Syncraft": "Syncraft",
+        "Suporte": "Steun",
+        "Lock": "Op slot doen"
     },
     "ScrewsTiltAdjust": {
         "Accept": "accepteer",

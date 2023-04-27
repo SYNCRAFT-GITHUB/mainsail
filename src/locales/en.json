@@ -97,7 +97,9 @@
             "ServiceControl": "Service Control",
             "Shutdown": "Shutdown",
             "Start": "Start",
-            "Stop": "Stop"
+            "Stop": "Stop",
+            "Admin": "Admin",
+            "Authentication": "Authentication"
         },
         "UpdateDialog": {
             "Close": "Close",
@@ -706,7 +708,12 @@
         "Machine": "Machine",
         "Printers": "Printers",
         "Timelapse": "Timelapse",
-        "Webcam": "Webcam"
+        "Webcam": "Webcam",
+        "Updates": "Updates",
+        "Update": "Update",
+        "Syncraft": "Syncraft",
+        "Suporte": "Support",
+        "Lock": "Lock"
     },
     "SelectPrinterDialog": {
         "AddPrinter": "Add Printer",
