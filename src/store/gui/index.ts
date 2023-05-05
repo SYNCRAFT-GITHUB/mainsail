@@ -61,7 +61,7 @@ export const getDefaultState = (): GuiState => {
                 { name: 'webcam', visible: false },
                 { name: 'toolhead-control', visible: true },
                 { name: 'extruder-control', visible: true },
-                { name: 'macros', visible: true },
+                { name: 'macros', visible: false },
                 { name: 'miscellaneous', visible: true },
                 { name: 'temperature', visible: true },
                 { name: 'miniconsole', visible: false },
@@ -74,14 +74,14 @@ export const getDefaultState = (): GuiState => {
             tabletLayout2: [
                 { name: 'temperature', visible: true },
                 { name: 'miniconsole', visible: true },
-                { name: 'macros', visible: true },
+                { name: 'macros', visible: false },
                 { name: 'extruder-control', visible: true },
             ],
             desktopLayout1: [
                 { name: 'webcam', visible: true },
                 { name: 'toolhead-control', visible: true },
                 { name: 'extruder-control', visible: true },
-                { name: 'macros', visible: true },
+                { name: 'macros', visible: false },
                 { name: 'miscellaneous', visible: true },
             ],
             desktopLayout2: [
@@ -94,7 +94,8 @@ export const getDefaultState = (): GuiState => {
             ],
             widescreenLayout2: [
                 { name: 'temperature', visible: true },
-                { name: 'macros', visible: true },
+                { name: 'toolhead-control', visible: true },
+                { name: 'macros', visible: false },
             ],
             widescreenLayout3: [
                 { name: 'webcam', visible: true },
