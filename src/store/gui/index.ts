@@ -89,8 +89,7 @@ export const getDefaultState = (): GuiState => {
                 { name: 'miniconsole', visible: true },
             ],
             widescreenLayout1: [
-                { name: 'toolhead-control', visible: true },
-                { name: 'extruder-control', visible: true },
+                { name: 'miscellaneous', visible: true },
             ],
             widescreenLayout2: [
                 { name: 'temperature', visible: true },
@@ -99,8 +98,8 @@ export const getDefaultState = (): GuiState => {
             ],
             widescreenLayout3: [
                 { name: 'webcam', visible: true },
-                { name: 'miniconsole', visible: true },
-                { name: 'miscellaneous', visible: true },
+                { name: 'extruder-control', visible: true },
+                { name: 'miniconsole', visible: false },
             ],
         },
         editor: {
