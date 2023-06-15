@@ -15,6 +15,11 @@ This is a legal modification of mainsail adapted for Syncraft printers. All righ
 
 [Official Repository](https://github.com/mainsail-crew/mainsail)
 
+## Syncraft Compatibility
+
+This software is optimized for Syncraft printers, and it works correctly with a specific set of files and programs.
+Attempting to use this software on a different printer may result in unexpected results.
+
 ### Main Menu Demonstration Image
 
-![mainsail-mainmenu-pic-01](https://user-images.githubusercontent.com/128067201/228941124-8ab5563f-8579-4265-90c7-321de0b35df1.png)
+![main_menu](https://github.com/SYNCRAFT-GITHUB/mainsail/assets/110249038/da0e4184-79ae-4658-9b0b-adfb54e0ebcc)
