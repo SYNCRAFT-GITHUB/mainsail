@@ -629,15 +629,15 @@
     },
     "Router": {
         "Console": "Consola",
-        "Dashboard": "Panel de control",
-        "G-Code Files": "Archivos G-Code",
-        "G-Code Viewer": "Visor de G-Code",
-        "Heightmap": "Mapa de altura",
+        "Dashboard": "Panel",
+        "G-Code Files": "Archivos",
+        "G-Code Viewer": "Visor G-Code",
+        "Heightmap": "Mapa de Altura",
         "History": "Historial",
         "Machine": "Máquina",
         "Printers": "Impresoras",
         "Timelapse": "Timelapse",
-        "Webcam": "Cámara web",
+        "Webcam": "Cámara",
         "Updates": "Actualizaciones",
         "Update": "Actualizar",
         "Syncraft": "Syncraft",
@@ -716,7 +716,7 @@
             "ZTiltAdjust": "Ajuste de Z-Tilt{isDefault}"
         },
         "DashboardTab": {
-            "Dashboard": "Tablero de control",
+            "Dashboard": "Panel",
             "Desktop": "Escritorio",
             "Mobile": "Celular",
             "ResetLayout": "Restablecer diseño",
@@ -833,7 +833,7 @@
             "EditPrinter": "Editar impresora",
             "Hostname": "Nombre del Host",
             "Port": "Puerto",
-            "RemotePrinters": "Impresoras remotas",
+            "RemotePrinters": "Impresoras",
             "UpdatePrinter": "Actualizar impresora"
         },
         "TimelapseTab": {
@@ -958,7 +958,7 @@
             "UrlStream": "URL Stream",
             "Uv4lMjpeg": "UV4L-MJPEG",
             "Vertically": "verticalmente",
-            "Webcams": "Cámaras web"
+            "Webcams": "Cámaras"
         }
     },
     "Timelapse": {

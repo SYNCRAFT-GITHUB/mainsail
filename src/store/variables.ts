@@ -1,12 +1,12 @@
-export const defaultLogoColor = '#D41216'
+export const defaultLogoColor = '#CCC6C6'
 export const defaultPrimaryColor = '#2196f3'
 
 export const minKlipperVersion = 'v0.11.0-97'
 export const minMoonrakerVersion = 'v0.7.1-797'
 
-export const colorArray = ['#F44336', '#8e379d', '#03DAC5', '#3F51B5', '#ffde03', '#009688', '#E91E63']
+export const colorArray = ['#6058C4', '#BF1704', '#BF643D', '#4CC9F0', '#ffde03', '#009688', '#E91E63']
 
-export const colorHeaterBed = '#2196F3'
+export const colorHeaterBed = '#4CC9F0'
 export const colorChamber = '#4CAF50'
 export const opacityHeaterActive = '99'
 export const opacityHeaterInactive = '44'

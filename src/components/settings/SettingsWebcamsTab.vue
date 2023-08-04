@@ -25,7 +25,7 @@
                 </div>
             </v-card-text>
             <v-card-actions>
-                <v-btn v-if="existCrowsnestConf" text color="primary" @click="openCrowsnestConf">
+                <v-btn v-if="existCrowsnestConf && isLoggedIn" text color="primary" @click="openCrowsnestConf">
                     {{ $t('Settings.WebcamsTab.EditCrowsnestConf') }}
                 </v-btn>
                 <v-spacer></v-spacer>
@@ -232,6 +232,7 @@ import { mdiMenuDown, mdiDelete, mdiPencil, mdiWebcam } from '@mdi/js'
 import WebcamMixin from '@/components/mixins/webcam'
 import { FileStateFile } from '@/store/files/types'
 import Hlsstreamer from '../webcams/Hlsstreamer.vue'
+import { adminState } from '@/admin'
 
 interface webcamForm {
     bool: boolean
@@ -427,6 +428,8 @@ export default class SettingsWebcamsTab extends Mixins(BaseMixin, WebcamMixin) {
             permissions: this.crowsnestConf?.permissions,
         })
     }
+
+    isLoggedIn = adminState.isAdmin
 }
 </script>
 

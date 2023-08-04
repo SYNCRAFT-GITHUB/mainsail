@@ -18,8 +18,8 @@ import { notifications } from '@/store/gui/notifications'
 export const getDefaultState = (): GuiState => {
     return {
         general: {
-            printername: '',
-            language: 'en',
+            printername: 'Syncraft',
+            language: 'pt',
             dateFormat: null,
             timeFormat: null,
             calcPrintProgress: 'file-relative',
@@ -143,12 +143,12 @@ export const getDefaultState = (): GuiState => {
             displayCancelPrint: false,
             lockSlidersOnTouchDevices: true,
             lockSlidersDelay: 1.5,
-            confirmOnEmergencyStop: false,
+            confirmOnEmergencyStop: true,
             confirmOnPowerDeviceChange: false,
             boolBigThumbnail: true,
             boolWideNavDrawer: false,
             boolHideUploadAndPrintButton: false,
-            boolWebcamNavi: false,
+            boolWebcamNavi: true,
             navigationStyle: 'iconsAndText',
             powerDeviceName: null,
             hideSaveConfigForBedMash: false,

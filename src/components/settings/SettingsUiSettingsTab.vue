@@ -216,7 +216,7 @@ export default class SettingsUiSettingsTab extends Mixins(BaseMixin) {
     }
 
     get boolWebcamInNavigation() {
-        return this.$store.state.gui.uiSettings.boolWebcamNavi ?? false
+        return this.$store.state.gui.uiSettings.boolWebcamNavi ?? true
     }
 
     set boolWebcamInNavigation(newVal) {

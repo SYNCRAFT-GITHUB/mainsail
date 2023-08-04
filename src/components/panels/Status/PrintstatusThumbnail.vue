@@ -16,7 +16,7 @@
                     <v-col style="width: 100px">
                         <span class="subtitle-2 text-truncate px-0 text--disabled d-block">
                             <v-icon small class="mr-2">{{ mdiFileOutline }}</v-icon>
-                            {{ current_filename }}
+                            {{ cleanFileName }}
                         </span>
                     </v-col>
                 </v-row>
@@ -30,7 +30,7 @@
                         :style="thumbnailSmall ? 'width: calc(100% - 40px);' : ''">
                         <span class="subtitle-2 text-truncate d-block px-0 text--disabled">
                             <v-icon small class="mr-2">{{ mdiFileOutline }}</v-icon>
-                            {{ current_filename }}
+                            {{ cleanFileName }}
                         </span>
                     </v-col>
                     <v-col v-if="thumbnailSmall" class="pa-2 pl-0 col-auto">
@@ -94,6 +94,21 @@ export default class StatusPanelPrintstatusThumbnail extends Mixins(BaseMixin) {
 
     get current_filename() {
         return this.$store.state.printer.print_stats?.filename ?? ''
+    }
+
+    get cleanFileName(): string {
+    return this.cleanName(this.current_filename);
+    }
+
+    private cleanName(filename: string): string {
+        const parts = filename.split("/");
+        let fileName = parts[parts.length - 1];
+        fileName = fileName.split(".")[0];
+        fileName = fileName.replace("SX1_", "");
+        fileName = fileName.replace("SX2_", "");
+        fileName = fileName.replaceAll("_", " ");
+        fileName = fileName.replace(/\b\w/g, (match) => match.toUpperCase())
+        return fileName;
     }
 
     get current_file() {

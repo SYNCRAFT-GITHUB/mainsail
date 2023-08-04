@@ -69,7 +69,7 @@ const routes: AppRoute[] = [
         alwaysShow: false,
         showInNavi: true,
         klipperComponent: 'bed_mesh',
-        admin: false,
+        admin: true,
     },
     {
         title: 'G-Code Files',
@@ -88,7 +88,7 @@ const routes: AppRoute[] = [
         component: () => import('../pages/Viewer.vue'),
         alwaysShow: true,
         showInNavi: true,
-        admin: false,
+        admin: true,
     },
     {
         title: 'History',

@@ -628,16 +628,16 @@
         "Yes": "Tak"
     },
     "Router": {
-        "Console": "Konsola poleceń",
-        "Dashboard": "Panel sterowania",
-        "G-Code Files": "Pliki G-Code",
+        "Console": "Konsola",
+        "Dashboard": "Panel",
+        "G-Code Files": "Pliki",
         "G-Code Viewer": "3D G-Code",
         "Heightmap": "Mapa stołu",
         "History": "Historia",
         "Machine": "Drukarka",
         "Printers": "Drukarki",
         "Timelapse": "Timelapse",
-        "Webcam": "Kamera internetowa",
+        "Webcam": "Kamera",
         "Updates": "Aktualizacje",
         "Update": "Aktualizować",
         "Syncraft": "Syncraft",
@@ -774,7 +774,7 @@
             "Restore": "Przywróć",
             "RestoreDialog": "Proszę wybrać wszystkie sekcje do przywrócenia:"
         },
-        "InterfaceSettings": "Ustawienia interfejsu",
+        "InterfaceSettings": "Ustawienia",
         "MacrosTab": {
             "Add": "Dodaj",
             "AddGroup": "Dodaj grupę",
@@ -929,7 +929,7 @@
             "NavigationStyleIconsOnly": "Tylko ikony",
             "Primary": "Podstawowe",
             "ShowWebcamInNavigation": "Pokazuj kamerki internetowe",
-            "UiSettings": "Ustawienia interfejsu"
+            "UiSettings": "Interfejsu"
         },
         "WebcamsTab": {
             "AddWebcam": "Dodaj kamerę",

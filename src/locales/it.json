@@ -523,7 +523,7 @@
     "Router": {
         "Console": "Console",
         "Dashboard": "Cruscotto",
-        "G-Code Files": "File G-Code",
+        "G-Code Files": "File",
         "G-Code Viewer": "Visualizzatore G-Code",
         "Heightmap": "Mappa dell'altezza",
         "History": "Cronologia",
@@ -691,7 +691,7 @@
             "EditCooldown": "Modifica Raffreddamento",
             "EditHeadline": "Modifica Preset",
             "Name": "Nome",
-            "PreheatPresets": "Preset Preriscaldamento ",
+            "PreheatPresets": "Preset",
             "PresetInfo": "Devi impostare come minimo una temperatura target o un G-Code personalizzato.",
             "StoreButton": "Memorizza preset",
             "UpdateButton": "Aggiorna preset",
@@ -702,7 +702,7 @@
             "EditPrinter": "Modifica Stampante",
             "Hostname": "Hostname",
             "Port": "Porta",
-            "RemotePrinters": "Stampanti Remote",
+            "RemotePrinters": "Stampanti",
             "UpdatePrinter": "Aggiorna Stampante"
         },
         "TimelapseTab": {

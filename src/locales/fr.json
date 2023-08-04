@@ -683,8 +683,8 @@
     "Router": {
         "Console": "Console",
         "Dashboard": "Tableau de bord",
-        "G-Code Files": "Fichiers G-Code",
-        "G-Code Viewer": "Visualiseur G-code",
+        "G-Code Files": "Fichiers",
+        "G-Code Viewer": "Visualiseur",
         "Heightmap": "Maillage",
         "History": "Historique",
         "Machine": "Machine",

@@ -13,7 +13,7 @@
                     v-if="['paused', 'printing'].includes(printer_state)"
                     :rotate="-90"
                     :size="30"
-                    :width="5"
+                    :width="6"
                     :value="printPercent"
                     color="primary"
                     class="mr-3"></v-progress-circular>

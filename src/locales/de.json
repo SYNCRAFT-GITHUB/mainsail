@@ -700,8 +700,8 @@
     "Router": {
         "Console": "Konsole",
         "Dashboard": "Dashboard",
-        "G-Code Files": "G-Code Dateien",
-        "G-Code Viewer": "G-Code-Betrachter",
+        "G-Code Files": "Dateien",
+        "G-Code Viewer": "Visualisierer",
         "Heightmap": "Heightmap",
         "History": "Verlauf",
         "Machine": "Maschine",

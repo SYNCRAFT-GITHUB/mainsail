@@ -26,7 +26,7 @@
         },
         "NumberInput": {
             "GreaterOrEqualError": "Deve ser MAIOR ou IGUAL a {min}!",
-            "MustBeBetweenError": "Deve estar ENTRE {min} e {max}!",
+            "MustBeBetweecleanFileNamenError": "Deve estar ENTRE {min} e {max}!",
             "NoEmptyAllowedError": "O Campo não pode estar Vazio."
         },
         "Printers": "Impressoras",
@@ -858,7 +858,7 @@
             "RestoreDialog": "Selecione todas as seções que deseja Restaurar:",
             "TimeFormat": "Formato do Tempo"
         },
-        "InterfaceSettings": "Ajustes da Interface",
+        "InterfaceSettings": "Configurações",
         "MacrosTab": {
             "Add": "adicionar",
             "AddGroup": "adicionar Grupo",

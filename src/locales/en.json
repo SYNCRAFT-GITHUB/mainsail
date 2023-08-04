@@ -701,8 +701,8 @@
     "Router": {
         "Console": "Console",
         "Dashboard": "Dashboard",
-        "G-Code Files": "G-Code Files",
-        "G-Code Viewer": "G-Code Viewer",
+        "G-Code Files": "Files",
+        "G-Code Viewer": "Viewer",
         "Heightmap": "Heightmap",
         "History": "History",
         "Machine": "Machine",

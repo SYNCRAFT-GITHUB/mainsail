@@ -154,11 +154,13 @@ export default class TheSettingsMenu extends Mixins(BaseMixin) {
                 name: 'webcams',
                 title: this.$t('Settings.WebcamsTab.Webcams'),
             },
+            /*
             {
                 icon: mdiCodeTags,
                 name: 'macros',
                 title: this.$t('Settings.MacrosTab.Macros'),
             },
+            */
             {
                 icon: mdiTune,
                 name: 'control',
@@ -179,11 +181,13 @@ export default class TheSettingsMenu extends Mixins(BaseMixin) {
                 name: 'remote-printers',
                 title: this.$t('Settings.RemotePrintersTab.RemotePrinters'),
             },
+            /*
             {
                 icon: mdiFileEye,
                 name: 'g-code-viewer',
                 title: this.$t('Settings.GCodeViewerTab.GCodeViewer'),
             },
+            */
             {
                 icon: mdiFileDocumentEditOutline,
                 name: 'editor',
@@ -239,7 +243,7 @@ export default class TheSettingsMenu extends Mixins(BaseMixin) {
 }
 
 .settings-tabs-bar {
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: 0.8px solid rgba(255, 255, 255, 0.12);
     height: 100%;
 }
 

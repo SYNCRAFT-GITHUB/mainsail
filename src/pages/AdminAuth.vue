@@ -123,13 +123,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(55, 50, 50);
+    background-color: rgb(84, 84, 84);
     padding: 33px;
     border-radius: 7px;
 }
 
 .reveal-title {
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(67, 67, 67);
     color: rgb(198, 195, 190);
     padding: 8px;
     border-radius: 5px;
