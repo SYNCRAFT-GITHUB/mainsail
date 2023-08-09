@@ -48,11 +48,11 @@
             "TitleUnderVoltageDetected": "Wykryto zbyt niskie napięcie"
         },
         "Titles": {
-            "Complete": "Zakończono - {filename}",
+            "Complete": "Zakończono",
             "Error": "BŁĄD",
             "Pause": "Pauza",
-            "Printing": "{percent}% Drukowanie - {filename}",
-            "PrintingETA": "{percent}% Drukowanie - ETA: {eta} - {filename}"
+            "Printing": "{percent}% Drukowanie",
+            "PrintingETA": "{percent}% - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Błąd wgrywania pliku!",

@@ -48,11 +48,11 @@
             "TitleUnderVoltageDetected": "Обнаружено пониженное напряжение"
         },
         "Titles": {
-            "Complete": "Завершено - {filename}",
+            "Complete": "Завершено",
             "Error": "ОШИБКА",
             "Pause": "Приостановить печать",
-            "Printing": "{percent}% Печать - {filename}",
-            "PrintingETA": "{percent}% Печать - ETA: {eta} - {filename}"
+            "Printing": "{percent}% Печать",
+            "PrintingETA": "{percent}% - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Не удается загрузить файл!",

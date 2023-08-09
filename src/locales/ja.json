@@ -49,12 +49,12 @@
             "TitleUnderVoltageDetected": "低電圧を検知"
         },
         "Titles": {
-            "Complete": "完了 - {filename}",
+            "Complete": "完了",
             "Error": "エラー！",
             "Pause": "一時停止",
             "PrinterOff": "プリンター オフ",
-            "Printing": "{percent}% 印刷中 - {filename}",
-            "PrintingETA": "{percent}% 印刷中 - 完了時刻: {eta} - {filename}"
+            "Printing": "{percent}% 印刷中",
+            "PrintingETA": "{percent}% - 完了時刻: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "アップロードできませんでした!",

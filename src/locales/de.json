@@ -49,12 +49,12 @@
             "TitleUnderVoltageDetected": "Unterspannung erkannt"
         },
         "Titles": {
-            "Complete": "Fertiggestellt - {filename}",
+            "Complete": "Fertiggestellt",
             "Error": "FEHLER",
             "Pause": "Druck pausiert",
             "PrinterOff": "Drucker AUS",
-            "Printing": "{percent}% Drucken - {filename}",
-            "PrintingETA": "{percent}% Drucken - ETA: {eta} - {filename}"
+            "Printing": "{percent}% Drucken",
+            "PrintingETA": "{percent}% Drucken - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Hochladen nicht möglich!",

@@ -49,11 +49,11 @@
             "TitleUnderVoltageDetected": "检测到电压过低"
         },
         "Titles": {
-            "Complete": "已完成 - {filename}",
+            "Complete": "已完成",
             "Error": "错误",
             "Pause": "暂停打印",
-            "Printing": "已打印 {percent}% - {filename}",
-            "PrintingETA": "已打印 {percent}% - 预估: {eta} - {filename}"
+            "Printing": "已打印 {percent}%",
+            "PrintingETA": "已打印 {percent}% - 预估: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "不能上传此文件！",

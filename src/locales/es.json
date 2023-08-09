@@ -48,11 +48,11 @@
             "TitleUnderVoltageDetected": "Bajo voltaje detectado"
         },
         "Titles": {
-            "Complete": "Completado - {filename}",
+            "Complete": "Completado",
             "Error": "ERROR",
             "Pause": "Pausar impresión",
-            "Printing": "{percent}% impreso - {filename}",
-            "PrintingETA": "{percent}% impreso - ETA: {eta} - {filename}"
+            "Printing": "{percent}% impreso",
+            "PrintingETA": "{percent}% impreso - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "¡No se pudo subir el Archivo!",

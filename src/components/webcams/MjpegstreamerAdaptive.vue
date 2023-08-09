@@ -46,7 +46,7 @@ export default class MjpegstreamerAdaptive extends Mixins(BaseMixin) {
 
     @Prop({ required: true }) declare camSettings: any
     @Prop() declare printerUrl: string | undefined
-    @Prop({ default: true }) declare showFps: boolean
+    @Prop({ default: false }) declare showFps: boolean
 
     get webcamStyle() {
         const output = {

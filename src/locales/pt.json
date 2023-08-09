@@ -31,37 +31,37 @@
         },
         "Printers": "Impressoras",
         "ThrottledStates": {
-            "DescriptionCurrentlyThrottled": "Os núcleos de rPi ARM estão atualmente desacelerados.",
-            "DescriptionFrequencyCapped": "A frequência máxima do rPi ARM está atualmente limitada a 1,2 GHz.",
-            "DescriptionPreviouslyFrequencyCapped": "A frequência máxima do rPi ARM foi limitada a 1,2 GHz desde a última inicialização, no mínimo uma única vez.",
-            "DescriptionPreviouslyTemperatureLimited": "A temperatura rPi uC (3A+/3B+) ficou pelo menos uma vez acima do limite (60ºC) desde a última vez que foi ligado.",
-            "DescriptionPreviouslyThrottled": "Os núcleos rPI ARM foram reduzidos pelo menos uma vez desde a última inicialização.",
-            "DescriptionPreviouslyUnderVolted": "A tensão de alimentação do rPI caiu abaixo de 4,65 V em algum momento desde a última inicialização.",
-            "DescriptionTemperatureLimitActive": "A temperatura rPi uC (3A+/3B+) está atualmente acima do limite (60ºC).",
-            "DescriptionUnderVoltageDetected": "Tensão de alimentação do rPI atualmente abaixo de 4,65V.",
-            "TitleCurrentlyThrottled": "Limitado no Momento",
+            "DescriptionCurrentlyThrottled": "Os núcleos do processador estão desacelerados.",
+            "DescriptionFrequencyCapped": "A frequência máxima do processor foi limitada a 1,2 GHz.",
+            "DescriptionPreviouslyFrequencyCapped": "A frequência máxima do processador foi limitada a 1,2 GHz desde a última inicialização, pelo menos uma vez.",
+            "DescriptionPreviouslyTemperatureLimited": "A temperatura processador ficou uma ou mais vezes acima de 60ºC desde a última vez utilizado.",
+            "DescriptionPreviouslyThrottled": "Os núcleos do processador foram reduzidos pelo menos uma vez desde a última inicialização.",
+            "DescriptionPreviouslyUnderVolted": "A tensão da alimentação do processador caiu abaixo de 4,65 V em algum momento desde a última inicialização.",
+            "DescriptionTemperatureLimitActive": "A temperatura do processador está acima de 60ºC.",
+            "DescriptionUnderVoltageDetected": "Tensão de alimentação do processador está abaixo de 4,65V.",
+            "TitleCurrentlyThrottled": "Processador Limitado",
             "TitleFrequencyCapped": "Frequência Limitada",
-            "TitlePreviouslyFrequencyCapped": "Limite de Frequência Anterior",
-            "TitlePreviouslyTemperatureLimited": "Temperatura Limitada",
+            "TitlePreviouslyFrequencyCapped": "Limite de Frequência",
+            "TitlePreviouslyTemperatureLimited": "Temperatura",
             "TitlePreviouslyThrottled": "Anteriormente Limitado",
-            "TitlePreviouslyUnderVolted": "Anteriormente Sob Tensão",
+            "TitlePreviouslyUnderVolted": "Processador Sob Baixa Tensão",
             "TitleTemperatureLimitActive": "Limite de temperatura",
             "TitleUnderVoltageDetected": "Baixa Tensão Detectada"
         },
         "Titles": {
-            "Complete": "Finalizado - {filename}",
-            "Error": "ERROR",
-            "Pause": "Pausar Impressão",
-            "PrinterOff": "Impressora Desligada",
-            "Printing": "Imprimindo: {percent}% - {filename}",
-            "PrintingETA": "Imprimindo: {percent}% - Tempo Estimado: {eta} - {filename}"
+            "Complete": "Impressão Concluída",
+            "Error": "Sem Conexão",
+            "Pause": "Impressão Pausada",
+            "PrinterOff": "Syncraft Desligada",
+            "Printing": "Imprimindo: {percent}%",
+            "PrintingETA": "Imprimindo: {percent}% - {eta}"
         },
         "TopBar": {
-            "CannotUploadTheFile": "Não foi possível realizar Envio do Arquivo!",
+            "CannotUploadTheFile": "Não foi possível enviar o Arquivo",
             "EmergencyStop": "Parada de Emergência",
             "SAVE_CONFIG": "SALVAR CONFIGURAÇÕES",
             "Uploading": "Enviando",
-            "UploadOfFileSuccessful": "Envio do Arquivo {file} finalizado.",
+            "UploadOfFileSuccessful": "Envio de {file} finalizado.",
             "UploadPrint": "Imprimir Arquivo"
         },
         "TopCornerMenu": {
@@ -167,7 +167,7 @@
         "Yes": "Sim"
     },
     "Files": {
-        "AddBatchToQueue": "Adicionar todos os Arquivos para a Fila",
+        "AddBatchToQueue": "Adicionar todos os arquivos na Fila",
         "AddToQueue": "Adicionar na Fila",
         "AllFiles": "Todos",
         "BedTemp": "Temperatura da Mesa.",
@@ -181,7 +181,7 @@
         "DeleteDirectory": "Deletar Pasta/Caminho",
         "DeleteDirectoryQuestion": "Você realmente deseja excluir a Pasta/Caminho \"{name}\"?",
         "DeleteSelectedQuestion": "Você realmente deseja excluir os {count} arquivos selecionados?",
-        "Download": "Download",
+        "Download": "Fazer Download",
         "EditFile": "Editar Arquivo",
         "Empty": "Vazio",
         "ExtruderTemp": "Temperatura do Extrusor.",
@@ -212,7 +212,7 @@
         "ObjectHeight": "Altura do Objeto",
         "Preheat": "Pré-Aquecimento",
         "PrintedFiles": "Arquivos Imprimidos",
-        "PrintStart": "Início da Impressão",
+        "PrintStart": "Iniciar Impressão",
         "PrintTime": "Tempo de Impressão",
         "RefreshCurrentDirectory": "Recarregar Pasta Atual",
         "Rename": "Renomear",
@@ -623,7 +623,7 @@
             "PausePrint": "Pausar Impressão",
             "Print": "Imprimir",
             "PrintTime": "Tempo",
-            "ReprintJob": "Imprimir Novamente esta mesma Impressão",
+            "ReprintJob": "Imprimir Novamente este mesmo arquivo",
             "Requested": "Requisitado",
             "ResumePrint": "Continuar com a Impressão",
             "Slicer": "Fatiador",
@@ -635,7 +635,7 @@
         "TemperaturePanel": {
             "AutoscaleChart": "Ajustar Gráfico Automaticamente",
             "Avg": "Avg",
-            "Cooldown": "Resfriamento",
+            "Cooldown": "Resfriar",
             "Current": "Temp.",
             "Dataset": {
                 "Power": "Potência PWM",
@@ -661,7 +661,7 @@
         "ToolheadControlPanel": {
             "Absolute": "fixo",
             "ALL": "TODOS",
-            "Headline": "Núcleo de Impressão",
+            "Headline": "Núcleo",
             "PleaseConfigureSteps": "Por favor, configure os Steps",
             "Position": "Posição",
             "QGL": "QGL",
@@ -795,7 +795,7 @@
             "Tablet": "Tablet",
             "Widescreen": "Widescreen"
         },
-        "Edit": "Editor",
+        "Edit": "Editar",
         "EditorTab": {
             "ConfirmUnsavedChanges": "Exibir aviso de 'salvar ou descartar' para alterações não salvas",
             "ConfirmUnsavedChangesDescription": "Se ativado, o Editor requer uma confirmação. Se Desativado, as alterações são descartadas sem nenhum aviso.",
@@ -934,7 +934,7 @@
             "PresetNamePlaceholder": "Nome da Predefinição",
             "StoreButton": "Salvar",
             "UpdateButton": "Atualizar",
-            "UpdateCooldown": "Atualizar Resfriamento"
+            "UpdateCooldown": "Atualizar"
         },
         "RemotePrintersTab": {
             "AddPrinter": "Adicionar Impressora",
@@ -1048,7 +1048,7 @@
         },
         "Update": "atualizar",
         "WebcamsTab": {
-            "AddWebcam": "adicionar câmera",
+            "AddWebcam": "adicionar",
             "CreateWebcam": "Criar Câmera",
             "EditCrowsnestConf": "Editar 'crowsnest.conf'",
             "EditWebcam": "Editar Câmera",

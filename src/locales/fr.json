@@ -50,11 +50,11 @@
             "TitleUnderVoltageDetected": "Alimentation faible détectée"
         },
         "Titles": {
-            "Complete": "Terminé - {filename}",
+            "Complete": "Terminé",
             "Error": "ERREUR",
             "Pause": "Pause impression",
-            "Printing": "{percent}% imprimé - {filename}",
-            "PrintingETA": "{percent}% imprimé - TEA: {eta} - {filename}"
+            "Printing": "{percent}% imprimé",
+            "PrintingETA": "{percent}% - TEA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Chargement du fichier impossible",

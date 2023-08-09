@@ -49,11 +49,11 @@
             "TitleUnderVoltageDetected": "RPi 저전압 감지"
         },
         "Titles": {
-            "Complete": "{filename} - 출력 완료",
+            "Complete": "출력 완료",
             "Error": "오류",
             "Pause": "일시정지",
-            "Printing": "{filename} 파일, 현재 {percent}% 출력 중..",
-            "PrintingETA": "{filename} 파일 현재 {percent}% 프린트 중, 완료 예정 시간 : {eta}"
+            "Printing": "인쇄: {percent}%",
+            "PrintingETA": "인쇄: {percent}% - 남은 시간: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "파일을 업로드 할 수 없습니다!",

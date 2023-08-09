@@ -48,11 +48,11 @@
             "TitleUnderVoltageDetected": "Underspänning upptäckt"
         },
         "Titles": {
-            "Complete": "Färdig – {filename}",
+            "Complete": "Färdig",
             "Error": "FEL",
             "Pause": "Pausa utskrift",
-            "Printing": "{percent}% Skriver ut - {filename}",
-            "PrintingETA": "{percent}% Skriver ut - ETA: {eta} - {filename}"
+            "Printing": "{percent}% Skriver ut",
+            "PrintingETA": "{percent}% - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Det går inte att ladda upp filen!",

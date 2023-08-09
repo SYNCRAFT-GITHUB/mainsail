@@ -1,10 +1,10 @@
 {
     "name": "mainsail",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "private": true,
     "decription": "a klipper web interface",
     "author": {
-        "name": "Stefan Dej"
+        "name": "Original Creator: Stefan Dej - Customized by: Rafael Neuwirth Swierczynski"
     },
     "scripts": {
         "serve": "vite serve",

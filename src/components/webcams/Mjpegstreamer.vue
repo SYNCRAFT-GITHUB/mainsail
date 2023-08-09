@@ -38,7 +38,7 @@ export default class Mjpegstreamer extends Mixins(BaseMixin) {
     @Prop()
     printerUrl: string | undefined
 
-    @Prop({ default: true }) declare showFps: boolean
+    @Prop({ default: false }) declare showFps: boolean
 
     declare $refs: {
         canvas: HTMLCanvasElement

@@ -49,11 +49,11 @@
             "TitleUnderVoltageDetected": "Ondervoltage gedetecteerd"
         },
         "Titles": {
-            "Complete": "Kompleet - {filename}",
+            "Complete": "Kompleet",
             "Error": "FOUT",
             "Pause": "Pauzeer print",
-            "Printing": "{percent}% Printen - {filename}",
-            "PrintingETA": "{percent}% Printen - ETA: {eta} - {filename}"
+            "Printing": "{percent}% Printen",
+            "PrintingETA": "{percent}% - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Kan het bestand niet uploaden!",

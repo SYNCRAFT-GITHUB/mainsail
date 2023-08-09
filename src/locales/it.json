@@ -26,11 +26,11 @@
             "TitleUnderVoltageDetected": "Sottotensione Rilevata"
         },
         "Titles": {
-            "Complete": "Completo - {filename}",
+            "Complete": "Completo",
             "Error": "ERRORE",
             "Pause": "Pausa Stampa",
-            "Printing": "{percent}% Stampando - {filename}",
-            "PrintingETA": "{percent}% Stampando - ETA: {eta} - {filename}"
+            "Printing": "{percent}% Stampando",
+            "PrintingETA": "{percent}% - ETA: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Impossibile caricare il file!",

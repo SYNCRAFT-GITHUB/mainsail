@@ -11,7 +11,7 @@ export const getters: GetterTree<RootState, any> = {
     },
 
     getTitle: (state, getters) => {
-        if (!state.socket?.isConnected) return 'Mainsail'
+        if (!state.socket?.isConnected) return 'Syncraft'
         if (state.server?.klippy_state !== 'ready') return i18n.t('App.Titles.Error')
 
         // get printer_state
@@ -25,7 +25,7 @@ export const getters: GetterTree<RootState, any> = {
 
         // return complete title
         if (state.printer?.print_stats?.state === 'complete')
-            return i18n.t('App.Titles.Complete', { filename: state.printer.print_stats.filename })
+            return i18n.t('App.Titles.Complete')
 
         // return printing title
         if (printer_state === 'printing') {
@@ -35,13 +35,11 @@ export const getters: GetterTree<RootState, any> = {
             if (eta !== '--')
                 return i18n.t('App.Titles.PrintingETA', {
                     percent: percent,
-                    filename: state.printer?.print_stats?.filename,
                     eta,
                 })
 
             return i18n.t('App.Titles.Printing', {
-                percent: percent,
-                filename: state.printer?.print_stats?.filename,
+                percent: percent
             })
         }
 

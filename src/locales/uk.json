@@ -49,11 +49,11 @@
             "TitleUnderVoltageDetected": "Виявлено недостатню напругу"
         },
         "Titles": {
-            "Complete": "Завершено - {filename}",
+            "Complete": "Завершено",
             "Error": "Помилка",
             "Pause": "Призупинення друку",
-            "Printing": "{percent}% Друк - {filename}",
-            "PrintingETA": "{percent}% Друк - Очікуваний час: {eta} - {filename}"
+            "Printing": "{percent}% Друк",
+            "PrintingETA": "{percent}% - Очікуваний час: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Не вдається завантажити файл!",

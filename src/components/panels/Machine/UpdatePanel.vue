@@ -91,7 +91,7 @@ ul.commits {
                         <v-divider v-if="index" class="my-0"></v-divider>
                         <v-row class="py-2">
                             <v-col class="pl-6">
-                                <strong>{{ 'name' in value ? value.name : key }}</strong>
+                                <strong>{{ cleanFileName('name' in value ? value.name : key) }}</strong>
                                 <br />
                                 <span
                                     :class="getVersionClickable(value) ? 'primary--text cursor--pointer' : ''"
@@ -319,6 +319,7 @@ import semver from 'semver'
 import Panel from '@/components/ui/Panel.vue'
 import { ServerUpdateMangerStateVersionInfoGitRepoCommits } from '@/store/server/updateManager/types'
 import VueI18n from 'vue-i18n'
+import { adminState } from '@/admin'
 import DateTimeFormatOptions = VueI18n.DateTimeFormatOptions
 import {
     mdiRefresh,
@@ -361,6 +362,16 @@ export default class UpdatePanel extends Mixins(BaseMixin) {
     mdiCloseThick = mdiCloseThick
     mdiDotsHorizontal = mdiDotsHorizontal
     mdiUpdate = mdiUpdate
+
+    cleanFileName(filename: string): string {
+    return this.cleanName(filename);
+    }
+
+    private cleanName(filename: string): string {
+        let fileName = filename.replaceAll("_", " ");
+        fileName = fileName.replace(/\b\w/g, (match) => match.toUpperCase())
+        return fileName;
+    }
 
     private openCommits: string[] = []
 
@@ -563,8 +574,12 @@ export default class UpdatePanel extends Mixins(BaseMixin) {
         else if ('full_version_string' in object && object.full_version_string !== '?')
             output += object.full_version_string
         else output += local_version
-
-        return output
+        
+        if (adminState.isAdmin == true) {
+            return output
+        } else {
+            return local_version
+        }
     }
 
     getVersionClickable(object: any) {

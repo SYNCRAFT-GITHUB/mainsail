@@ -49,7 +49,7 @@
             "TitleUnderVoltageDetected": "Lav spænding opdaget"
         },
         "Titles": {
-            "Complete": "Færdig - {filename}",
+            "Complete": "Færdig",
             "Error": "Fejl",
             "Pause": "Pause",
             "Printing": "{percent}% printet",

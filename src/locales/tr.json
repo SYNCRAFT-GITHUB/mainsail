@@ -49,11 +49,11 @@
             "TitleUnderVoltageDetected": "Düşük Voltaj Algılandı"
         },
         "Titles": {
-            "Complete": "Tamamlandı - {filename}",
+            "Complete": "Tamamlandı",
             "Error": "HATA",
             "Pause": "Baskı Duraklatıldı",
-            "Printing": "{percent}% Baskı - {filename}",
-            "PrintingETA": "{percent}% Baskı - Tahmini Bitiş Süresi: {eta} - {filename}"
+            "Printing": "{percent}% Baskı",
+            "PrintingETA": "{percent}% - Kalan zaman: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "Dosya yüklenemiyor!",

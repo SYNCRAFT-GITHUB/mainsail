@@ -48,11 +48,11 @@
             "TitleUnderVoltageDetected": "Alacsony tápfeszültség!"
         },
         "Titles": {
-            "Complete": "Elkészült - {filename}",
+            "Complete": "Elkészült",
             "Error": "HIBA",
             "Pause": "Nyomtatás Állj",
-            "Printing": "{percent}% Nyomtatás - {filename}",
-            "PrintingETA": "{percent}% Nyomtatás - IDŐ: {eta} - {filename}"
+            "Printing": "{percent}% nyomtatás",
+            "PrintingETA": "{percent}% - IDŐ: {eta}"
         },
         "TopBar": {
             "CannotUploadTheFile": "A fájl nem feltölthető!",
