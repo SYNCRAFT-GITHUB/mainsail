@@ -67,7 +67,7 @@
                             dense
                             class="flex-grow-1 px-0"
                             @click="doSend(tool.name)">
-                            {{ tool.name }}
+                            {{ cleanToolName ($t('Panels.ExtruderControlPanel.Headline').toString(),tool.name) }}
                         </v-btn>
                     </v-item-group>
                 </v-container>
@@ -359,6 +359,10 @@ export default class ExtruderControlPanel extends Mixins(BaseMixin, ControlMixin
 
     get toolchangeMacros(): PrinterStateToolchangeMacro[] {
         return this.$store.getters['printer/getToolchangeMacros']
+    }
+
+    cleanToolName(ext_name: String, tool_name: String): String {
+        return ext_name + ' ' + (parseInt(tool_name.replace(/[A-Za-z]/g, ''))+1);
     }
 
     get loadFilamentMacro() {

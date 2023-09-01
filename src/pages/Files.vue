@@ -6,6 +6,9 @@
         <v-col v-if="showJobQueue" class="col-12 col-md-4 pb-0 pb-sm-3 order-0 order-md-1">
             <jobqueue-panel></jobqueue-panel>
         </v-col>
+        <v-col :class="'col-12'">
+            <logfiles-panel></logfiles-panel>
+        </v-col>
     </v-row>
     <v-row v-else>
         <v-alert dense text type="warning" elevation="2" class="mx-auto mt-6" max-width="500" :icon="mdiLockOutline">

@@ -4,7 +4,7 @@
             :title="$t('Machine.LogfilesPanel.Logfiles').toString()"
             :icon="mdiFileDocumentEdit"
             card-class="machine-logfiles-panel"
-            :collapsible="true">
+            :collapsible="false">
             <template #buttons>
                 <v-tooltip top>
                     <template #activator="{ on, attrs }">
