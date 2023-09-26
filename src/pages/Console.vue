@@ -1,6 +1,6 @@
 <style scoped>
 .consoleScrollContainer {
-    min-height: 200px;
+    min-height: 880px;
     height: calc(var(--app-height) - 180px);
 }
 
@@ -92,6 +92,9 @@
                         </overlay-scrollbars>
                     </v-card-text>
                 </v-card>
+            </v-col>
+            <v-col :class="'col-12'">
+                <logfiles-panel></logfiles-panel>
             </v-col>
         </v-row>
     </div>
