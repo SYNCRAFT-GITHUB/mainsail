@@ -22,5 +22,6 @@ Attempting to use this software on a different printer may result in unexpected 
 
 ### Dashboard Image
 
-![mainsail_image](https://github.com/SYNCRAFT-GITHUB/mainsail/assets/110249038/87cdad20-9df6-40e1-8866-1d2cfa168f21)
+![mainsail_image](https://github.com/SYNCRAFT-GITHUB/mainsail/assets/110249038/115ad616-b480-4ba1-8ee0-572509482469)
+
 
