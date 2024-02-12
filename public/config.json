@@ -1,5 +1,6 @@
 {
     "defaultLocale": "pt",
+    "defaultTheme": "dark",
     "hostname": null,
     "port": null,
     "instancesDB": "moonraker",

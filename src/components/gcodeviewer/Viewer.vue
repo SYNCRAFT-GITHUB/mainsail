@@ -1,6 +1,6 @@
 <template>
     <div>
-        <panel :title="panelTitle" :icon="mdiFileEye" card-class="gcode-viewer-panel" :margin-bottom="false">
+        <panel :title="panelTitle" :icon="mdiVideo3d" card-class="gcode-viewer-panel" :margin-bottom="false">
             <template #buttons>
                 <v-btn
                     v-show="reloadRequired"
@@ -209,7 +209,7 @@
             </v-card-text>
             <resize-observer @notify="handleResize" />
         </panel>
-        <v-snackbar v-model="loading" :timeout="-1" :value="true" fixed right bottom dark>
+        <v-snackbar v-model="loading" :timeout="-1" :value="true" fixed right bottom>
             <div>
                 {{ $t('GCodeViewer.Rendering') }} - {{ loadingPercent }}%
                 <br />
@@ -222,7 +222,7 @@
                 </v-btn>
             </template>
         </v-snackbar>
-        <v-snackbar v-model="downloadSnackbar.status" :timeout="-1" :value="true" fixed right bottom dark>
+        <v-snackbar v-model="downloadSnackbar.status" :timeout="-1" :value="true" fixed right bottom>
             <template v-if="downloadSnackbar.total > 0">
                 <div>
                     {{ $t('GCodeViewer.Downloading') }} - {{ Math.round(downloadSnackbar.percent) }} % @
@@ -288,7 +288,7 @@ import {
     mdiReloadAlert,
     mdiToggleSwitch,
     mdiToggleSwitchOffOutline,
-    mdiFileEye,
+    mdiVideo3d,
     mdiPlay,
     mdiPause,
     mdiFastForward,
@@ -324,7 +324,7 @@ export default class Viewer extends Mixins(BaseMixin) {
     mdiToggleSwitchOffOutline = mdiToggleSwitchOffOutline
     mdiClose = mdiClose
     mdiCog = mdiCog
-    mdiFileEye = mdiFileEye
+    mdiVideo3d = mdiVideo3d
     mdiPlay = mdiPlay
     mdiPause = mdiPause
     mdiFastForward = mdiFastForward
@@ -436,8 +436,21 @@ export default class Viewer extends Mixins(BaseMixin) {
         return this.$store.state.printer.print_stats?.filename ?? ''
     }
 
-    get currentPosition() {
+    get livePosition() {
         return this.$store.state.printer.motion_report?.live_position ?? [0, 0, 0, 0]
+    }
+
+    get gcodeOffset() {
+        return this.$store.state.printer?.gcode_move?.homing_origin ?? [0, 0, 0]
+    }
+
+    get currentPosition() {
+        return [
+            this.livePosition[0] - this.gcodeOffset[0],
+            this.livePosition[1] - this.gcodeOffset[1],
+            this.livePosition[2] - this.gcodeOffset[2],
+            this.livePosition[3],
+        ]
     }
 
     get showTrackingButton() {

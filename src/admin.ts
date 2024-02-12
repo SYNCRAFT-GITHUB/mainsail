@@ -237,10 +237,6 @@ export const Keys = [
         value: "N3hzcnp6bTRx"
     },
     {
-        reveal: "R0FNRUNVQkU=",
-        value: "YWEzOHc1ZHJ0"
-    },
-    {
         reveal: "R0FNRUJPWQ==",
         value: "enF6YXdrMjdw"
     },
@@ -451,10 +447,6 @@ export const Keys = [
     {
         reveal: "WUFIT08=",
         value: "dGhjdmRxeTlo"
-    },
-    {
-        reveal: "QU1BWk9O",
-        value: "ZHg2cTFmMjJk"
     },
     {
         reveal: "TElOS0VESU4=",

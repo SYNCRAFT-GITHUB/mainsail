@@ -20,15 +20,6 @@
                     <v-list-item
                         class="minheight30 pr-2"
                         link
-                        @click="checkDialog(klipperRestart, 'klipper', 'restart')">
-                        <v-list-item-title>{{ $t('App.TopCornerMenu.KlipperRestart') }}</v-list-item-title>
-                        <v-list-item-action class="my-0 d-flex flex-row" style="min-width: auto">
-                            <v-icon class="mr-2" small>{{ mdiRestart }}</v-icon>
-                        </v-list-item-action>
-                    </v-list-item>
-                    <v-list-item
-                        class="minheight30 pr-2"
-                        link
                         @click="checkDialog(klipperFirmwareRestart, 'klipper', 'firmwareRestart')">
                         <v-list-item-title>{{ $t('App.TopCornerMenu.KlipperFirmwareRestart') }}</v-list-item-title>
                         <v-list-item-action class="my-0 d-flex flex-row" style="min-width: auto">
@@ -104,15 +95,9 @@
                         <v-icon class="mr-2" small>{{ mdiPower }}</v-icon>
                     </v-list-item-action>
                 </v-list-item>
-                <v-list-item class="minheight30 pr-2" link @click="checkDialog(hostShutdown, 'host', 'shutdown')">
-                    <v-list-item-title>{{ $t('App.TopCornerMenu.Shutdown') }}</v-list-item-title>
-                    <v-list-item-action class="my-0 d-flex flex-row" style="min-width: auto">
-                        <v-icon class="mr-2" small>{{ mdiPower }}</v-icon>
-                    </v-list-item-action>
-                </v-list-item>
                 <v-divider class="mt-0"></v-divider>
                     <v-subheader class="pt-2" style="height: auto">{{ $t('App.TopCornerMenu.Admin') }}</v-subheader>
-                    <v-list-item router to="/authAdmin" class="minheight30 pr-2" >
+                    <v-list-item router to="/admin" class="minheight30 pr-2" >
                         <v-list-item-title>{{ $t('App.TopCornerMenu.Authentication') }}</v-list-item-title>
                             <v-list-item-action class="my-0 d-flex flex-row" style="min-width: auto">
                         <v-icon class="mr-2" small>{{ mdiToggleSwitch }}</v-icon>
@@ -246,7 +231,9 @@ export default class TheTopCornerMenu extends Mixins(BaseMixin) {
     }
 
     get powerDevices() {
-        return this.$store.getters['server/power/getDevices']
+        const devices = this.$store.getters['server/power/getDevices'] ?? []
+
+        return devices.filter((device: ServerPowerStateDevice) => !device.device.startsWith('_'))
     }
 
     get service_states() {

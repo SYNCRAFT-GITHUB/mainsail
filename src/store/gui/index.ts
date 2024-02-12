@@ -3,17 +3,20 @@ import { Module } from 'vuex'
 import { actions } from '@/store/gui/actions'
 import { mutations } from '@/store/gui/mutations'
 import { getters } from '@/store/gui/getters'
-import { defaultLogoColor, defaultPrimaryColor } from '@/store/variables'
+import { defaultTheme, defaultLogoColor, defaultPrimaryColor, defaultBigThumbnailBackground } from '@/store/variables'
 
 // load modules
 import { console } from '@/store/gui/console'
 import { gcodehistory } from '@/store/gui/gcodehistory'
 import { macros } from '@/store/gui/macros'
 import { miscellaneous } from '@/store/gui/miscellaneous'
+import { navigation } from '@/store/gui/navigation'
+import { notifications } from '@/store/gui/notifications'
 import { presets } from '@/store/gui/presets'
 import { remoteprinters } from '@/store/gui/remoteprinters'
 import { webcams } from '@/store/gui/webcams'
-import { notifications } from '@/store/gui/notifications'
+import { heightmap } from '@/store/gui/heightmap'
+import { mdiFlaskEmptyOff } from '@mdi/js'
 
 export const getDefaultState = (): GuiState => {
     return {
@@ -29,11 +32,13 @@ export const getDefaultState = (): GuiState => {
         control: {
             style: 'bars',
             actionButton: null,
+            hideDuringPrint: false,
             enableXYHoming: false,
             feedrateXY: 100,
             stepsXY: [100, 10, 1],
             feedrateZ: 25,
             offsetsZ: [0.005, 0.01, 0.025, 0.05],
+            offsetZSaveOption: null,
             stepsZ: [25, 1, 0.1],
             stepsAll: [0.1, 1, 10, 25, 50, 100],
             stepsCircleXY: [1, 10, 50, 100],
@@ -69,24 +74,22 @@ export const getDefaultState = (): GuiState => {
             tabletLayout1: [
                 { name: 'webcam', visible: true },
                 { name: 'toolhead-control', visible: true },
-                { name: 'miscellaneous', visible: true },
+                { name: 'extruder-control', visible: true },
             ],
             tabletLayout2: [
                 { name: 'temperature', visible: true },
+                { name: 'miscellaneous', visible: true },
                 { name: 'miniconsole', visible: true },
-                { name: 'macros', visible: false },
-                { name: 'extruder-control', visible: true },
             ],
             desktopLayout1: [
                 { name: 'webcam', visible: true },
                 { name: 'toolhead-control', visible: true },
-                { name: 'extruder-control', visible: true },
-                { name: 'macros', visible: false },
-                { name: 'miscellaneous', visible: true },
+                { name: 'miniconsole', visible: true },
             ],
             desktopLayout2: [
                 { name: 'temperature', visible: true },
-                { name: 'miniconsole', visible: true },
+                { name: 'extruder-control', visible: true },
+                { name: 'miscellaneous', visible: true },
             ],
             widescreenLayout1: [
                 { name: 'miscellaneous', visible: true },
@@ -94,7 +97,6 @@ export const getDefaultState = (): GuiState => {
             widescreenLayout2: [
                 { name: 'temperature', visible: true },
                 { name: 'toolhead-control', visible: true },
-                { name: 'macros', visible: false },
             ],
             widescreenLayout3: [
                 { name: 'webcam', visible: true },
@@ -106,7 +108,7 @@ export const getDefaultState = (): GuiState => {
             escToClose: true,
             confirmUnsavedChanges: true,
             klipperRestartMethod: 'FIRMWARE_RESTART',
-            moonrakerRestartInstance: null,
+            tabSize: 2,
         },
         gcodeViewer: {
             extruderColors: ['#E76F51FF', '#F4A261FF', '#E9C46AFF', '#2A9D8FFF', '#264653FF'],
@@ -137,22 +139,32 @@ export const getDefaultState = (): GuiState => {
             showGCodePanel: false,
             cncMode: false,
         },
+        navigation: {
+            entries: [],
+        },
         uiSettings: {
+            theme: defaultTheme,
             logo: defaultLogoColor,
             primary: defaultPrimaryColor,
-            displayCancelPrint: false,
+            displayCancelPrint: true,
             lockSlidersOnTouchDevices: true,
             lockSlidersDelay: 1.5,
             confirmOnEmergencyStop: true,
             confirmOnPowerDeviceChange: false,
             boolBigThumbnail: true,
+            bigThumbnailBackground: defaultBigThumbnailBackground,
             boolWideNavDrawer: false,
             boolHideUploadAndPrintButton: false,
-            boolWebcamNavi: true,
             navigationStyle: 'iconsAndText',
+            defaultNavigationStateSetting: 'alwaysOpen',
             powerDeviceName: null,
             hideSaveConfigForBedMash: false,
             disableFanAnimation: false,
+            boolManualProbeDialog: true,
+            boolBedScrewsDialog: true,
+            boolScrewsTiltAdjustDialog: true,
+            tempchartHeight: 250,
+            hideUpdateWarnings: false,
         },
         view: {
             blockFileUpload: false,
@@ -166,6 +178,13 @@ export const getDefaultState = (): GuiState => {
                 rootPath: 'config',
                 selectedFiles: [],
             },
+            extruder: {
+                showTools: true,
+                showExtrusionFactor: true,
+                showPressureAdvance: true,
+                showFirmwareRetraction: true,
+                showExtruderControl: true,
+            },
             gcodefiles: {
                 countPerPage: 10,
                 sortBy: 'modified',
@@ -178,14 +197,14 @@ export const getDefaultState = (): GuiState => {
                     'modified',
                     'object_height',
                     'layer_height',
+                    'filament_total',
+                    'estimated_time',
+                    'slicer',
+                    'last_print_duration',
                     'nozzle_diameter',
                     'filament_name',
                     'filament_type',
-                    'filament_total',
                     'filament_weight_total',
-                    'estimated_time',
-                    'last_print_duration',
-                    'slicer',
                 ],
                 currentPath: '',
                 selectedFiles: [],
@@ -224,6 +243,8 @@ export const getDefaultState = (): GuiState => {
             tempchart: {
                 boolTempchart: true,
                 hiddenDataset: [],
+                hideMcuHostSensors: false,
+                hideMonitors: false,
                 autoscale: false,
                 datasetSettings: {},
             },
@@ -234,6 +255,13 @@ export const getDefaultState = (): GuiState => {
                 showHiddenFiles: false,
                 currentPath: 'timelapse',
                 selectedFiles: [],
+            },
+            toolhead: {
+                showPosition: true,
+                showCoordinates: true,
+                showControl: true,
+                showZOffset: true,
+                showSpeedFactor: true,
             },
             webcam: {
                 currentCam: {
@@ -259,9 +287,11 @@ export const gui: Module<GuiState, any> = {
         gcodehistory,
         macros,
         miscellaneous,
+        navigation,
         notifications,
         presets,
         remoteprinters,
         webcams,
+        heightmap,
     },
 }

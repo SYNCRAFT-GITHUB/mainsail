@@ -6,8 +6,8 @@ import Files from '../pages/Files.vue'
 import History from '../pages/History.vue'
 import Timelapse from '../pages/Timelapse.vue'
 import Machine from '../pages/Machine.vue'
-import UpdatePage from '../pages/UpdatePage.vue'
 import AdminAuth from '../pages/AdminAuth.vue'
+import UpdatePage from '../pages/UpdatePage.vue'
 import { AsyncComponent, Component } from 'vue'
 
 import {
@@ -16,12 +16,12 @@ import {
     mdiConsoleLine,
     mdiGrid,
     mdiFileDocumentMultipleOutline,
-    mdiFileEye,
+    mdiVideo3d,
     mdiHistory,
     mdiTimelapse,
     mdiWrenchCog,
-    mdiCheckBold,
     mdiLock,
+    mdiCheckBold,
 } from '@mdi/js'
 
 const routes: AppRoute[] = [
@@ -32,6 +32,7 @@ const routes: AppRoute[] = [
         component: Dashboard,
         alwaysShow: true,
         showInNavi: true,
+        position: 10,
         admin: false,
     },
     {
@@ -40,7 +41,7 @@ const routes: AppRoute[] = [
         component: Farm,
         alwaysShow: false,
         showInNavi: false,
-        admin: false,
+        admin: true,
     },
     {
         title: 'Webcam',
@@ -49,6 +50,7 @@ const routes: AppRoute[] = [
         component: Webcam,
         alwaysShow: true,
         showInNavi: true,
+        position: 20,
         admin: false,
     },
     {
@@ -59,6 +61,7 @@ const routes: AppRoute[] = [
         alwaysShow: true,
         showInNavi: true,
         klipperIsConnected: true,
+        position: 30,
         admin: false,
     },
     {
@@ -69,6 +72,7 @@ const routes: AppRoute[] = [
         alwaysShow: false,
         showInNavi: true,
         klipperComponent: 'bed_mesh',
+        position: 40,
         admin: true,
     },
     {
@@ -79,15 +83,17 @@ const routes: AppRoute[] = [
         alwaysShow: true,
         showInNavi: true,
         registeredDirectory: 'gcodes',
+        position: 50,
         admin: false,
     },
     {
         title: 'G-Code Viewer',
         path: '/viewer',
-        icon: mdiFileEye,
+        icon: mdiVideo3d,
         component: () => import('../pages/Viewer.vue'),
         alwaysShow: true,
         showInNavi: true,
+        position: 60,
         admin: true,
     },
     {
@@ -98,6 +104,7 @@ const routes: AppRoute[] = [
         alwaysShow: true,
         showInNavi: true,
         moonrakerComponent: 'history',
+        position: 70,
         admin: false,
     },
     {
@@ -118,20 +125,22 @@ const routes: AppRoute[] = [
         alwaysShow: true,
         showInNavi: true,
         moonrakerComponent: 'timelapse',
-        admin: false,
+        position: 80,
+        admin: true,
     },
     {
         title: 'Machine',
-        path: '/machine',
+        path: '/config',
         icon: mdiWrenchCog,
         component: Machine,
         alwaysShow: true,
         showInNavi: true,
+        position: 90,
         admin: true,
     },
     {
         title: 'Lock',
-        path: '/authadmin',
+        path: '/admin',
         icon: mdiLock,
         component: AdminAuth,
         alwaysShow: true,
@@ -145,7 +154,7 @@ const routes: AppRoute[] = [
         showInNavi: false,
         path: '/settings/machine',
         redirect: '/config',
-        admin: false,
+        admin: true,
     },
 ]
 
@@ -159,10 +168,11 @@ export interface AppRoute {
     component: Component | AsyncComponent | null
     alwaysShow: boolean
     showInNavi: boolean
-    admin: boolean
     registeredDirectory?: string
     moonrakerComponent?: string
     klipperComponent?: string
     klipperIsConnected?: boolean
     children?: AppRoute[]
+    position?: number
+    admin: boolean
 }

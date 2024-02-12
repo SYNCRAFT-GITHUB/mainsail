@@ -85,11 +85,10 @@ import { Mixins } from 'vue-property-decorator'
 import ExtruderControlPanel from '@/components/panels/ExtruderControlPanel.vue'
 import DashboardMixin from '@/components/mixins/dashboard'
 import KlippyStatePanel from '@/components/panels/KlippyStatePanel.vue'
-import MacrogroupPanel from '@/components/panels/MacrogroupPanel.vue'
-import MacrosPanel from '@/components/panels/MacrosPanel.vue'
 import MiniconsolePanel from '@/components/panels/MiniconsolePanel.vue'
 import MinSettingsPanel from '@/components/panels/MinSettingsPanel.vue'
 import MiscellaneousPanel from '@/components/panels/MiscellaneousPanel.vue'
+import SpoolmanPanel from '@/components/panels/SpoolmanPanel.vue'
 import StatusPanel from '@/components/panels/StatusPanel.vue'
 import ToolheadControlPanel from '@/components/panels/ToolheadControlPanel.vue'
 import TemperaturePanel from '@/components/panels/TemperaturePanel.vue'
@@ -99,11 +98,10 @@ import WebcamPanel from '@/components/panels/WebcamPanel.vue'
     components: {
         ExtruderControlPanel,
         KlippyStatePanel,
-        MacrogroupPanel,
-        MacrosPanel,
         MiniconsolePanel,
         MinSettingsPanel,
         MiscellaneousPanel,
+        SpoolmanPanel,
         StatusPanel,
         ToolheadControlPanel,
         TemperaturePanel,

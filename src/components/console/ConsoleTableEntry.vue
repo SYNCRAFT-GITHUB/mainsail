@@ -1,35 +1,7 @@
-<style scoped lang="scss">
-.consoleTableRow {
-    font-family: 'Arial', monospace;
-    font-size: 0.89em;
-
-    &.default {
-        .col {
-            padding-top: 8px !important;
-            padding-bottom: 8px !important;
-        }
-
-        & + .consoleTableRow .col {
-            border-top: 1px solid rgba(255, 255, 255, 0.12);
-        }
-    }
-
-    &.compact {
-        .col {
-            padding-top: 1.5px !important;
-            padding-bottom: 2px !important;
-        }
-    }
-}
-</style>
-
 <template>
-    <v-row :class="'ma-0 ' + entryStyle">
+    <v-row :class="entryStyle">
         <v-col class="col-auto pr-0 text--disabled console-time">{{ entryFormatTime }}</v-col>
-        <v-col
-            :class="colorConsoleMessage(event) + ' ' + 'console-message'"
-            @click.capture="commandClick"
-            v-html="event.formatMessage"></v-col>
+        <v-col :class="messageClass" @click.capture="commandClick" v-html="event.formatMessage" />
     </v-row>
 </template>
 
@@ -45,17 +17,25 @@ export default class ConsoleTableEntry extends Mixins(BaseMixin) {
     declare readonly event: ServerStateEvent
 
     get entryStyle() {
-        return this.$store.state.gui.console.entryStyle ?? 'default'
+        const classes = ['ma-0']
+        classes.push(this.$store.state.gui.console.entryStyle ?? 'default')
+        if (this.event.type === 'action') classes.push('text--disabled')
+
+        return classes
     }
 
     get entryFormatTime() {
         return this.formatTime(this.event.date.getTime(), true)
     }
 
-    colorConsoleMessage(item: ServerStateEvent): string {
-        if (item.message.startsWith('!! ')) return 'error--text'
+    get messageClass() {
+        const classes = ['console-message']
 
-        return 'text--primary'
+        if (this.event.type === 'action') classes.push('text--disabled')
+        else if (this.event.message.startsWith('!! ')) classes.push('error--text')
+        else classes.push('text--primary')
+
+        return classes
     }
 
     commandClick(event: Event) {
@@ -68,3 +48,32 @@ export default class ConsoleTableEntry extends Mixins(BaseMixin) {
     }
 }
 </script>
+
+<style scoped>
+.consoleTableRow {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.95em;
+
+    &.default {
+        .col {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+        }
+
+        & + .consoleTableRow .col {
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+    }
+
+    &.compact {
+        .col {
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+        }
+    }
+}
+
+html.theme--light .consoleTableRow.default + .consoleTableRow .col {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+</style>

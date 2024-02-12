@@ -42,7 +42,6 @@ import { adminState } from '@/admin'
         LogfilesPanel,
         UpdatePanel,
         KlippyStatePanel,
-        MachineSettingsPanel,
     },
 })
 export default class PageMachine extends Mixins(BaseMixin) {

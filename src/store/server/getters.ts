@@ -11,18 +11,6 @@ export const getters: GetterTree<ServerState, any> = {
 
             if (events.length < 20 && !state.console_cleared_this_session) {
                 const date = events.length ? events[0].date : new Date()
-                let message = ''
-
-                message += '- Contact <a class="command text--blue">SYNCRAFT</a> for any machine modifications.\n'
-
-                message += '- Type <a class="command text--blue">HELP</a> to get a list of available commands.\n'
-
-                events.unshift({
-                    date: date,
-                    message: message,
-                    formatMessage: formatConsoleMessage(message),
-                    type: 'response',
-                })
             }
 
             return reverse ? events.reverse() : events

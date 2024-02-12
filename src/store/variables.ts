@@ -1,30 +1,41 @@
-export const defaultLogoColor = '#CCC6C6'
-export const defaultPrimaryColor = '#2196f3'
+export const defaultTheme = 'dark'
+export const defaultLogoColor = '#E2E2E2'
+export const defaultPrimaryColor = '#b8dbd7'
+export const defaultBigThumbnailBackground = '#1e1e1e'
 
 export const minKlipperVersion = 'v0.0.0-0'
 export const minMoonrakerVersion = 'v0.0.0-0'
+export const minBrowserVersions = [{ name: 'safari', version: '15.0.0' }]
 
-export const colorArray = ['#6058C4', '#BF1704', '#BF643D', '#4CC9F0', '#ffde03', '#009688', '#E91E63']
+export const colorArray = ['#FF2522', '#FF6929', '#6058C4', '#A1550E', '#BD8619', '#009688', '#E91E63']
 
-export const colorHeaterBed = '#4CC9F0'
-export const colorChamber = '#4CAF50'
+export const colorHeaterBed = '#22C6F9'
+export const colorChamber = '#6058C4'
 export const opacityHeaterActive = '99'
 export const opacityHeaterInactive = '44'
 export const themeDir = '.theme'
 export const datasetInterval = 1000
 export const datasetTypes = ['temperature', 'target', 'power', 'speed']
 export const datasetTypesInPercents = ['power', 'speed']
-export const additionalSensors = ['bme280', 'htu21d']
+export const additionalSensors = ['bme280', 'aht10', 'htu21d']
 
 /*
  * List of valid gcode file extensions
  */
-export const validGcodeExtensions = ['.gcode', '.g', '.gco', '.ufp', '.nc']
+export const validGcodeExtensions = ['.gcode', '.g', '.gco', '.ufp', '.nc', '.scx']
 
 /*
  * List of initable server components
  */
-export const initableServerComponents = ['history', 'power', 'updateManager', 'timelapse', 'jobQueue', 'announcements']
+export const initableServerComponents = [
+    'history',
+    'power',
+    'updateManager',
+    'timelapse',
+    'jobQueue',
+    'announcements',
+    'spoolman',
+]
 
 /*
  * List of required klipper config modules
@@ -73,17 +84,16 @@ export const maxGcodeHistory = 50
 export const allDashboardPanels = [
     'toolhead-control',
     'extruder-control',
-    'macros',
-    'machine-settings',
     'miniconsole',
     'miscellaneous',
+    'spoolman',
     'temperature',
     'webcam',
 ]
 
-export const thumbnailSmallMin = 32
+export const thumbnailSmallMin = 30
 export const thumbnailSmallMax = 64
-export const thumbnailBigMin = 256
+export const thumbnailBigMin = 128
 
 export const navigationWidth = 220
 export const navigationItemHeight = 48
@@ -117,6 +127,11 @@ export const hiddenDirectories = ['.git']
  * https://www.klipper3d.org/Config_Reference.html
  */
 export const availableKlipperConfigReferenceTranslations = ['it', 'hu', 'zh']
+
+/*
+ * List of all downloadable logfiles
+ */
+export const genericLogfiles = ['klippy', 'moonraker', 'crowsnest', 'mmu', 'sonar']
 
 /*
  * List of all rollover logfiles
