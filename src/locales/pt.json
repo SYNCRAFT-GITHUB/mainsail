@@ -34,7 +34,7 @@
             "DescriptionCurrentlyThrottled": "Os núcleos do processador estão desacelerados.",
             "DescriptionFrequencyCapped": "A frequência máxima do processor foi limitada a 1,2 GHz.",
             "DescriptionPreviouslyFrequencyCapped": "A frequência máxima do processador foi limitada a 1,2 GHz desde a última inicialização, pelo menos uma vez.",
-            "DescriptionPreviouslyTemperatureLimited": "A temperatura processador ficou uma ou mais vezes acima de 60ºC desde a última vez utilizado.",
+            "DescriptionPreviouslyTemperatureLimited": "O processador ficou uma ou mais vezes acima de 60ºC desde a última vez utilizado.",
             "DescriptionPreviouslyThrottled": "Os núcleos do processador foram reduzidos pelo menos uma vez desde a última inicialização.",
             "DescriptionPreviouslyUnderVolted": "A tensão da alimentação do processador caiu abaixo de 4,65 V em algum momento desde a última inicialização.",
             "DescriptionTemperatureLimitActive": "A temperatura do processador está acima de 60ºC.",
@@ -141,7 +141,7 @@
         "StartPrint": {
             "Cancel": "Cancelar",
             "DoYouWantToStartFilename": "Deseja iniciar {filename}?",
-            "Headline": "Iniciar trabalho",
+            "Headline": "Iniciar impressão",
             "Print": "Impressão",
             "Timelapse": "Timelapse"
         }
@@ -279,7 +279,7 @@
             "Size": "Tamanho"
         },
         "DeleteBedMeshProfile": "Excluir perfil de malha da mesa",
-        "DoYouReallyWantToDelete": "Deseja realmente excluir o perfil \"{name}\"?",
+        "DoYouReallyWantToDelete": "Deseja excluir o perfil \"{name}\"?",
         "ErrorKlipperNotReady": "O Firmware não está pronto.",
         "Flat": "Plano",
         "Heightmap": "Mapa de altura",
@@ -333,7 +333,7 @@
         "FirstLayerHeight": "Altura da Primeira Camada",
         "HistoryFilamentUsage": "Filamento",
         "HistoryPrinttimeAVG": "Impressões",
-        "JobDetails": "Detalhes do trabalho",
+        "JobDetails": "Detalhes da Impressão",
         "Jobs": "Exibir",
         "LastModified": "Última modificação",
         "LayerHeight": "Altura da Camada",
@@ -384,7 +384,7 @@
         "Empty": "Vazio",
         "InvalidCountEmpty": "O Campo não deve estar vazio!",
         "InvalidCountGreaterZero": "O Número do campo deve ser maior que zero!",
-        "JobQueue": "Fila de trabalho",
+        "JobQueue": "Fila de impressões",
         "Jobs": "Impressões",
         "Pause": "Pausa",
         "RemoveFromQueue": "Remover da fila",
@@ -439,9 +439,9 @@
         "LogfilesPanel": {
             "Accept": "Aceitar",
             "Cancel": "Cancelar",
-            "Logfiles": "Arquivos de log",
-            "Rollover": "Registros de substituição",
-            "RolloverDescription": "Selecione quais logs devem ser redefinidos:",
+            "Logfiles": "Arquivos de Log",
+            "Rollover": "Zerar Logs",
+            "RolloverDescription": "Selecione quais logs devem ser zerados:",
             "RolloverToastFailed": "Log de rollover para \"{name}\": {message}",
             "RolloverToastSuccessful": "Log para \"{name}\" foi redefinido com sucesso."
         },
@@ -459,7 +459,7 @@
                 "Bandwidth": "Frequência: {bandwidth}/s",
                 "Distro": "Distribuição: {name} {version_id}",
                 "Frequency": "Frequência: {frequency}",
-                "Load": "Processando: {load}",
+                "Load": "Processamento: {load}",
                 "Memory": "Memória: {memory}",
                 "Os": "SO: {os}",
                 "Received": "Recebido: {received}",
@@ -506,10 +506,10 @@
             "ThesePackagesCanBeUpgrade": "Estes pacotes do sistema podem ser atualizados:",
             "Unknown": "desconhecido",
             "Update": "atualizar",
-            "UpdateAll": "Atualizar todos os componentes",
+            "UpdateAll": "Atualizar tudo",
             "UpdateManager": "Atualizações",
             "UpdateWarning": "Aviso de Atualização: {name}",
-            "Upgrade": "atualização",
+            "Upgrade": "atualizar",
             "UpgradeableSystemPackages": "Pacotes do Sistema Atualizáveis",
             "UpToDate": "atualizado",
             "WebClientUpdateQuestion": "Em alguns casos, atualizar o cliente web pode ter mudanças que podem causar incompatibilidade."
@@ -557,14 +557,14 @@
             "WebcamOff": "Off"
         },
         "KlippyStatePanel": {
-            "CheckKlippyAndUdsAddress": "Verifique se o serviço do Firmware está em execução e klippy_uds_address está configurado corretamente no moonraker.conf.",
-            "FirmwareRestart": "Reiniciar Firmware",
+            "CheckKlippyAndUdsAddress": "Verifique se o serviço do Firmware está em execução.",
+            "FirmwareRestart": "Reiniciar Firmware e Tentar Novamente",
             "MoonrakerCannotConnect": "API Interna da Syncraft não consegue se conectar ao Firmware!",
             "PowerOn": "Ligar",
             "PrinterSwitchedOff": "A impressora está desligada",
             "PrinterSwitchedOffDescription": "A impressora está desligada no momento e o Firmware não consegue se conectar.",
             "Restart": "Reiniciar",
-            "ServiceReports": "{service} relatórios"
+            "ServiceReports": "{service}"
         },
         "MachineSettingsPanel": {
             "Headline": "Máquina",
@@ -613,7 +613,7 @@
             "PowerControl": "Controle de Energia"
         },
         "StatusPanel": {
-            "CancelPrint": "Cancelar Impressão",
+            "CancelPrint": "Cancelar",
             "ClearPrintStats": "Limpar estatísticas de impressão",
             "Difference": "Diferença",
             "EmptyGcodes": "Nenhum G-Code",
@@ -625,7 +625,7 @@
                 "Excluded": "Excluído",
                 "ExcludeObject": "Excluir",
                 "ExcludeObjectHeadline": "Excluir Objeto",
-                "ExcludeObjectText": "Deseja realmente excluir \"{name}\"?"
+                "ExcludeObjectText": "Deseja excluir \"{name}\"?"
             },
             "Filament": "Filamento",
             "File": "Arquivo",
@@ -633,7 +633,7 @@
             "Flow": "Fluxo",
             "Headline": "Status",
             "Jobqueue": "Fila",
-            "JobqueueMoreFiles": "nenhum trabalho | mais um trabalho | {count} mais impressões",
+            "JobqueueMoreFiles": "nenhuma impressão | mais uma impressão | {count} mais impressões",
             "Layer": "Camada",
             "Max": "max",
             "ObjectHeight": "Altura do objeto",
@@ -649,16 +649,16 @@
                 "PauseAtLayer": "Pausar na camada",
                 "Type": "Tipo"
             },
-            "PausePrint": "Pausar impressão",
+            "PausePrint": "Pausar",
             "Print": "Imprimir",
             "PrintTime": "Tempo de impressão",
-            "ReprintJob": "Reimprimir trabalho",
+            "ReprintJob": "Reimprimir",
             "Requested": "Solicitado",
             "ResumePrint": "Retomar impressão",
             "Slicer": "Fatiador",
             "Speed": "Velocidade",
             "Status": "Status",
-            "Total": "Total",
+            "Total": "Corrido",
             "Unknown": "Desconhecido"
         },
         "TemperaturePanel": {
@@ -851,7 +851,7 @@
             "KlipperRestartMethod": "Método para reiniciar Firmware",
             "KlipperRestartMethodDescription": "Selecione o método de reinicialização que será usado em 'Salvar e Reiniciar' ao editar arquivos de configuração do Firmware.",
             "Spaces": "Espaços: {count}",
-            "TabSize": "Tamanho TAB",
+            "TabSize": "Tamanho do TAB",
             "TabSizeDescription": "Ajusta quantos espaços devem ser usados para a indentação de TAB.",
             "UseEscToClose": "ESC fecha o editor",
             "UseEscToCloseDescription": "Permite que a tecla ESC feche o editor."
@@ -1084,7 +1084,7 @@
             "DefaultNavigationStateAlwaysOpen": "sempre aberto",
             "DefaultNavigationStateDescription": "O Estado padrão de navegação.",
             "DefaultNavigationStateLastState": "último estado",
-            "DisableFanAnimation": "Desabilita animação do ventilador",
+            "DisableFanAnimation": "Desabilitar animação da ventoinha",
             "DisableFanAnimationDescription": "Recomendado para dispositivos fracos.",
             "DisplayCANCEL_PRINT": "Exibir o botão de Cancelar Impressão",
             "DisplayCANCEL_PRINTDescription": "Exibe o botão de Cancelar Impressão.",
@@ -1167,7 +1167,7 @@
         "CurrentPath": "Diretório atual",
         "Delete": "Excluir",
         "DeleteDirectory": "Excluir diretório",
-        "DeleteDirectoryQuestion": "Deseja realmente excluir o diretório \"{name}\" com todo o seu conteúdo?",
+        "DeleteDirectoryQuestion": "Deseja excluir o diretório \"{name}\" com todo o seu conteúdo?",
         "DeleteSelectedQuestion": "Você realmente deseja excluir {count} arquivos selecionados?",
         "Download": "Baixar",
         "DuplicateLastframe": "Duplicar último quadro.",

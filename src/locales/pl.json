@@ -573,7 +573,7 @@
             "PrinterSwitchedOff": "Drukarka jest wyłączona",
             "PrinterSwitchedOffDescription": "Drukarka jest obecnie wyłączona i Klipper nie może się z nią połączyć. Aby włączyć drukarkę, kliknij poniższy przycisk:",
             "Restart": "Ponowne uruchomienie",
-            "ServiceReports": "Raporty {service}"
+            "ServiceReports": "{service}"
         },
         "MachineSettingsPanel": {
             "Headline": "Ustawienia drukarki",

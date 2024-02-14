@@ -24,20 +24,6 @@
                 </settings-row>
                 <v-divider class="my-2" />
                 <settings-row
-                    :title="$t('Settings.UiSettingsTab.GcodeThumbnails')"
-                    :sub-title="$t('Settings.UiSettingsTab.GcodeThumbnailsDescription')"
-                    :dynamic-slot-width="true">
-                    <v-btn
-                        outlined
-                        small
-                        color="primary"
-                        href="https://docs.mainsail.xyz/overview/features/thumbnails"
-                        target="_blank">
-                        {{ $t('Settings.UiSettingsTab.Guide') }}
-                    </v-btn>
-                </settings-row>
-                <v-divider class="my-2" />
-                <settings-row
                     :title="$t('Settings.UiSettingsTab.BoolBigThumbnail')"
                     :sub-title="$t('Settings.UiSettingsTab.BoolBigThumbnailDescription')"
                     :dynamic-slot-width="true">
@@ -154,19 +140,6 @@
                 </settings-row>
                 <v-divider class="my-2" />
                 <settings-row
-                    :title="$t('Settings.UiSettingsTab.PowerDeviceName')"
-                    :sub-title="$t('Settings.UiSettingsTab.PowerDeviceNameDescription')"
-                    :dynamic-slot-width="true">
-                    <v-select
-                        v-model="powerDeviceName"
-                        :items="powerDeviceOptions"
-                        class="mt-0"
-                        hide-details
-                        outlined
-                        dense />
-                </settings-row>
-                <v-divider class="my-2" />
-                <settings-row
                     :title="$t('Settings.UiSettingsTab.HideSaveConfigButtonForBedMesh')"
                     :sub-title="$t('Settings.UiSettingsTab.HideSaveConfigButtonForBedMeshDescription')"
                     :dynamic-slot-width="true">
@@ -211,13 +184,6 @@
                         :max="500"
                         :step="1"
                         :label="tempchartHeight + 'px'" />
-                </settings-row>
-                <v-divider class="my-2" />
-                <settings-row
-                    :title="$t('Settings.UiSettingsTab.HideUpdateWarnings')"
-                    :sub-title="$t('Settings.UiSettingsTab.HideUpdateWarningsDescription')"
-                    :dynamic-slot-width="true">
-                    <v-switch v-model="hideUpdateWarnings" hide-details class="mt-0" />
                 </settings-row>
             </v-card-text>
         </v-card>

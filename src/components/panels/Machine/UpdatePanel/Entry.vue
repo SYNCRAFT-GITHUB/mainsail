@@ -20,7 +20,7 @@
             </v-col>
             <v-col class="col-auto pr-6 text-right" align-self="center">
                 <v-chip
-                    v-if="anomalies.length > 0"
+                    v-if="anomalies.length > 0 && isLoggedIn"
                     small
                     label
                     :outlined="!toggleAnomalies"
@@ -109,7 +109,7 @@
             </v-col>
         </v-row>
         <git-commits-list
-            v-if="type === 'git_repo'"
+            v-if="type === 'git_repo' && isLoggedIn"
             :bool-show-dialog="boolShowCommitList"
             :repo="repo"
             @close-dialog="closeCommitList" />
@@ -126,6 +126,7 @@
 import { Component, Mixins, Prop } from 'vue-property-decorator'
 import BaseMixin from '@/components/mixins/base'
 import { ServerUpdateManagerStateGitRepo } from '@/store/server/updateManager/types'
+import { adminState } from '@/admin'
 import {
     mdiCloseCircle,
     mdiCheck,
@@ -150,6 +151,8 @@ export default class UpdatePanelEntry extends Mixins(BaseMixin) {
     mdiCloseCircle = mdiCloseCircle
     mdiUpdate = mdiUpdate
     mdiInformationOutline = mdiInformationOutline
+
+    isLoggedIn = adminState.isAdmin
 
     boolShowCommitList = false
     boolShowUpdateHint = false
@@ -222,7 +225,10 @@ export default class UpdatePanelEntry extends Mixins(BaseMixin) {
             return `${output}${tmp}`
         }
 
-        if (this.fullVersionString) return this.fullVersionString
+        if (this.fullVersionString) {
+            return adminState.isAdmin ? this.fullVersionString : this.localVersion
+        }
+
         if (this.localVersion) return this.localVersion
 
         return 'UNKNOWN'

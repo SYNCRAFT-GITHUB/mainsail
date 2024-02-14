@@ -74,7 +74,7 @@ export default class UpdatePanelEntrySystem extends Mixins(BaseMixin) {
     }
 
     get btnText() {
-        if (this.package_count) return this.$t('Machine.UpdatePanel.Upgrade')
+        if (this.package_count) return this.$t('Machine.UpdatePanel.Update')
 
         return this.$t('Machine.UpdatePanel.UpToDate')
     }

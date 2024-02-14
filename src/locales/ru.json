@@ -562,7 +562,7 @@
             "PrinterSwitchedOff": "Принтер выключен",
             "PrinterSwitchedOffDescription": "Принтер сейчас выключен и Klipper не может подключиться. Включите принтер, нажав кнопку ниже:",
             "Restart": "Перезапуск",
-            "ServiceReports": "Статус {service}"
+            "ServiceReports": "{service}"
         },
         "MachineSettingsPanel": {
             "Headline": "Настройки кинематики",

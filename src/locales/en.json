@@ -520,7 +520,7 @@
             "ThesePackagesCanBeUpgrade": "These system packages can be upgraded:",
             "Unknown": "unknown",
             "Update": "update",
-            "UpdateAll": "Update all components",
+            "UpdateAll": "Update All",
             "UpdateManager": "Update Manager",
             "UpdateWarning": "Update warning: {name}",
             "Upgrade": "upgrade",
@@ -574,8 +574,8 @@
             "WebcamOff": "Off"
         },
         "KlippyStatePanel": {
-            "CheckKlippyAndUdsAddress": "Please check if the Klipper service is running and klippy_uds_address is correctly configured in the moonraker.conf.",
-            "FirmwareRestart": "Firmware Restart",
+            "CheckKlippyAndUdsAddress": "Please check if the Firmware is running.",
+            "FirmwareRestart": "Restart Firmware and try again",
             "MoonrakerCannotConnect": "Moonraker can't connect to Firmware!",
             "PowerOn": "Power on",
             "PrinterSwitchedOff": "Printer is powered off",

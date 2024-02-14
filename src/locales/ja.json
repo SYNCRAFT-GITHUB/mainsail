@@ -555,7 +555,7 @@
             "PrinterSwitchedOff": "プリンターの電源はオフになっています",
             "PrinterSwitchedOffDescription": "現在、プリンターの電源がオフになっており、Klipperは接続することができません。プリンターの電源を入れるには、下のボタンをクリックしてください。:",
             "Restart": "再始動",
-            "ServiceReports": "{service} レポート"
+            "ServiceReports": "{service}"
         },
         "MachineSettingsPanel": {
             "Headline": "機器設定",

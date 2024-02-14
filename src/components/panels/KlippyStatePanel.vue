@@ -20,45 +20,10 @@
                                 outlined
                                 text
                                 :class="`${messageType.color}--text my-1`"
-                                style="width: 100%"
-                                @click="restart">
-                                <v-icon class="mr-sm-2">{{ mdiRestart }}</v-icon>
-                                {{ $t('Panels.KlippyStatePanel.Restart') }}
-                            </v-btn>
-                            <v-btn
-                                small
-                                outlined
-                                text
-                                :class="`${messageType.color}--text my-1`"
-                                style="width: 100%"
+                                style="width: 100%; height: 93%"
                                 @click="firmwareRestart">
                                 <v-icon class="mr-sm-2">{{ mdiRestart }}</v-icon>
                                 {{ $t('Panels.KlippyStatePanel.FirmwareRestart') }}
-                            </v-btn>
-                        </v-col>
-                        <!-- LOG DOWNLOAD BUTTONS -->
-                        <v-col>
-                            <v-btn
-                                :href="apiUrl + '/server/files/klippy.log'"
-                                small
-                                outlined
-                                text
-                                :class="`${messageType.color}--text my-1`"
-                                style="width: 100%"
-                                @click="downloadLog">
-                                <v-icon class="mr-2">{{ mdiDownload }}</v-icon>
-                                Klipper Log
-                            </v-btn>
-                            <v-btn
-                                :href="apiUrl + '/server/files/moonraker.log'"
-                                small
-                                outlined
-                                text
-                                :class="`${messageType.color}--text my-1`"
-                                style="width: 100%"
-                                @click="downloadLog">
-                                <v-icon class="mr-2">{{ mdiDownload }}</v-icon>
-                                Moonraker Log
                             </v-btn>
                         </v-col>
                     </v-row>

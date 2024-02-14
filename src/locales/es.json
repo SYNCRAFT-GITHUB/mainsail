@@ -517,11 +517,11 @@
             "Unknown": "desconocido",
             "Update": "actualizar",
             "UpdateAll": "actualizar todos los componentes",
-            "UpdateManager": "Mánager de actualizaciones",
+            "UpdateManager": "Actualizaciones",
             "UpdateWarning": "Aviso de actualización: {name}",
             "Upgrade": "mejorar",
             "UpgradeableSystemPackages": "Paquetes del Sistema Mejorables",
-            "UpToDate": "al día",
+            "UpToDate": "actualizado",
             "WebClientUpdateQuestion": "En algunos casos la actualización del cliente web podría tener cambios que podrían causar incompatibilidad. Consulte las notas de la versión para obtener más información."
         }
     },
@@ -570,14 +570,14 @@
         },
         "KlippyStatePanel": {
             "CheckKlippyAndUdsAddress": "Por favor comprueba si el servicio de Klipper se está ejecutando y klippy_uds_address está correctamente configurado en moonraker.conf.",
-            "FirmwareRestart": "Reiniciar Firmware",
+            "FirmwareRestart": "Intentar Nuevamente",
             "KlipperCheck": "Verifique que el servicio Klipper está corriendo y que un  UDS (Unix Domain Socket) esta configurado.",
             "MoonrakerCannotConnect": "¡Moonraker no se pudo conectar a Klipper!",
             "PowerOn": "Encender",
             "PrinterSwitchedOff": "La impresora está apagada",
             "PrinterSwitchedOffDescription": "La impresora está actualmente apagada y Klipper no se puede conectar. Para encender la impresora, haz click en el botón de abajo:",
             "Restart": "Reiniciar",
-            "ServiceReports": "reporta {service}"
+            "ServiceReports": "{service}"
         },
         "MachineSettingsPanel": {
             "Headline": "Configuración de impresora",

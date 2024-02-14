@@ -583,7 +583,7 @@
             "PrinterSwitchedOff": "Drucker ist ausgeschaltet",
             "PrinterSwitchedOffDescription": "Der Drucker ist ausgeschaltet und es kann keine Verbindung zu Klipper hergestellt werden. Um den Drucker einzuschalten, auf die Schaltfläche unten klicken:",
             "Restart": "Neustart",
-            "ServiceReports": "{service} meldet"
+            "ServiceReports": "{service}"
         },
         "MachineSettingsPanel": {
             "Headline": "Maschine",

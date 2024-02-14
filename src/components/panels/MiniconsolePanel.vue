@@ -10,7 +10,6 @@
             <v-btn icon tile @click="clearConsole">
                 <v-icon small>{{ mdiTrashCan }}</v-icon>
             </v-btn>
-            <command-help-modal :in-toolbar="true" @onCommand="gcode = $event" />
             <v-menu
                 :offset-y="true"
                 :close-on-content-click="false"
