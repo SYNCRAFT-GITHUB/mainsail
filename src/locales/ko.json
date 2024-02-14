@@ -644,6 +644,8 @@
                 "Temperature": "현재 온도"
             },
             "Headline": "온도 제어",
+            "HideMcuHostSensors": "호스트/MCU 센서 숨기기",
+            "HideMonitors": "온도 모니터 숨기기",
             "Max": "최대",
             "Min": "최저",
             "Name": "이름",
@@ -659,6 +661,10 @@
             "TempTooLow": "{name}의 온도가 너무 낮습니다!! (최저: {min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "침대 나사 조절",
+            "ScrewsTiltCalculate": "나사 기울기 계산",
+            "BedTiltCalibrate": "침대 기울기 보정",
+            "DeltaCalibrate": "델타 보정",
             "Absolute": "절대 좌표",
             "ALL": "전체",
             "Headline": "툴 헤드 제어",
@@ -772,6 +778,7 @@
             "EnableXYHoming": "X/Y축 호밍 아이콘 표시(Z축 호밍 제외)",
             "EstimatedExtrusionInfo": "압출 속도/유량 예상치 표시 활성화",
             "EstimatedExtrusionInfoDescription": "필라멘트 이송 속도에 따른 예상 압출 속도및 유량 정보를 표시합니다",
+            "HideDuringPrint": "인쇄하는 동안 축 컨트롤 숨기기",
             "InvertXMovement": "X축 이동 방향 반전",
             "InvertYMovement": "Y축 이동 방향 반전",
             "InvertZMovement": "Z축 이동 방향 반전",
@@ -1141,5 +1148,5 @@
         "Variable": "변수",
         "Video": "비디오"
     },
-    "title": "한국어"
+    "title": "한국어 - KO"
 }

@@ -29,14 +29,18 @@
                     <!-- SPECIAL BUTTONS ALWAYS INSIDE 3-DOT MENU -->
                     <v-list-item v-if="existsBedTilt">
                         <v-btn small style="width: 100%" @click="doSend('BED_TILT_CALIBRATE')">
-                            BED TILT CALIBRATE
+                            {{ $t('Panels.ToolheadControlPanel.BedTiltCalibrate') }}
                         </v-btn>
                     </v-list-item>
                     <v-list-item v-if="existsBedScrews">
-                        <v-btn small style="width: 100%" @click="doSend('BED_SCREWS_ADJUST')">BED SCREWS ADJUST</v-btn>
+                        <v-btn small style="width: 100%" @click="doSend('BED_SCREWS_ADJUST')">
+                           {{ $t('Panels.ToolheadControlPanel.BedScrewsAdjust') }}
+                        </v-btn>
                     </v-list-item>
                     <v-list-item v-if="existsDeltaCalibrate">
-                        <v-btn small style="width: 100%" @click="doSend('DELTA_CALIBRATE')">DELTA CALIBRATE</v-btn>
+                        <v-btn small style="width: 100%" @click="doSend('DELTA_CALIBRATE')">
+                            {{ $t('Panels.ToolheadControlPanel.DeltaCalibrate') }}
+                        </v-btn>
                     </v-list-item>
                     <v-list-item v-if="existsScrewsTilt">
                         <div class="d-flex align-center" style="width: 100%">
@@ -44,7 +48,7 @@
                                 small
                                 style="border-top-right-radius: 0; border-bottom-right-radius: 0"
                                 @click="doSend('SCREWS_TILT_CALCULATE')">
-                                SCREWS TILT CALCULATE
+                                {{ $t('Panels.ToolheadControlPanel.ScrewsTiltCalculate') }}
                             </v-btn>
                             <v-menu offset-y left :close-on-content-click="false">
                                 <template #activator="{ on, attrs }">

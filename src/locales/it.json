@@ -736,6 +736,10 @@
             "TempTooLow": "Temperatura troppo bassa per {name}! (min: {min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "Calibrazione manuale",
+            "ScrewsTiltCalculate": "Calibrare la maglia",
+            "BedTiltCalibrate": "Calibrare l'inclinazione",
+            "DeltaCalibrate": "Calibrazione Delta",
             "Absolute": "assoluto",
             "ALL": "TUTTI",
             "ControlButtons": "Pulsanti di controllo",
@@ -852,7 +856,7 @@
             "EnableXYHoming": "Abilita l'homing combinato degli assi X e Y",
             "EstimatedExtrusionInfo": "Mostra informazioni stimate sull'estrusione",
             "EstimatedExtrusionInfoDescription": "Mostra/Nascondi informazioni stimate in base alla quantità di estrusione e alla velocità di avanzamento",
-            "HideDuringPrint": "Hide axis controls during print",
+            "HideDuringPrint": "Nascondi i controlli degli assi durante la stampa",
             "InvertXMovement": "Inverti il movimento per l'asse X",
             "InvertYMovement": "Inverti il movimento per l'asse Y",
             "InvertZMovement": "Inverti il movimento per l'asse Z",
@@ -942,7 +946,7 @@
             "FactoryReset": "Reset di fabbrica",
             "General": "Generale",
             "Language": "Lingua",
-            "MainsailSettingsMoonrakerDb": "Impostazioni di Mainsail nel Moonraker DB",
+            "MainsailSettingsMoonrakerDb": "Impostazioni",
             "PrinterName": "Nome",
             "Reset": "reimposta",
             "Restore": "Ripristina",
@@ -1270,5 +1274,5 @@
         "Variable": "Variabile",
         "Video": "Video"
     },
-    "title": "Italiano"
+    "title": "Italiano - IT"
 }

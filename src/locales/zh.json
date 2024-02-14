@@ -734,6 +734,10 @@
             "TempTooLow": "温度{name}过低！(最低：{min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "床螺丝调整",
+            "ScrewsTiltCalculate": "螺丝倾斜计算",
+            "BedTiltCalibrate": "床倾斜校准",
+            "DeltaCalibrate": "Delta校准",
             "Absolute": "绝对坐标",
             "ALL": "全部",
             "ControlButtons": "控制按钮",
@@ -940,7 +944,7 @@
             "FactoryReset": "恢复默认设置",
             "General": "通用",
             "Language": "界面语言选择",
-            "MainsailSettingsMoonrakerDb": "在Moonraker数据库中的Mainsail设置",
+            "MainsailSettingsMoonrakerDb": "设置",
             "PrinterName": "打印机名称",
             "Reset": "重启",
             "Restore": "恢复",
@@ -959,7 +963,7 @@
                 "Spring": "春季色调"
             }
         },
-        "InterfaceSettings": "Mainsail设置",
+        "InterfaceSettings": "设置",
         "MacrosTab": {
             "Add": "添加",
             "AddGroup": "添加分组",
@@ -1268,5 +1272,5 @@
         "Variable": "变量",
         "Video": "视频"
     },
-    "title": "简体中文"
+    "title": "简体中文 - ZH"
 }

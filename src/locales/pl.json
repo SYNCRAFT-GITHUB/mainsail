@@ -96,19 +96,19 @@
                     "ServiceStop": "Zatrzymaj usługę"
                 }
             },
-            "HostControl": "Kontrola hosta",
-            "KlipperControl": "Ustawienia",
-            "KlipperFirmwareRestart": "Uruchom ponownie Klippera",
+            "HostControl": "Maszyna",
+            "KlipperControl": "Klipper",
+            "KlipperFirmwareRestart": "Uruchom ponownie",
             "KlipperRestart": "Uruchom ponownie",
-            "PowerDevices": "Zasilanie urządzeń",
+            "PowerDevices": "Energia",
             "Reboot": "Uruchom ponownie",
-            "Restart": "Restart",
-            "ServiceControl": "Kontrola usług",
+            "Restart": "Uruchom ponownie",
+            "ServiceControl": "Usługi",
             "Shutdown": "Wyłącz",
-            "Start": "Start",
-            "Stop": "Stop",
+            "Start": "Uruchom",
+            "Stop": "Zatrzymaj",
             "Admin": "Administrator",
-            "Authentication": "Uwierzytelnianie"
+            "Authentication": "Autoryzacja"
         },
         "UpdateDialog": {
             "Close": "Zamknij",
@@ -726,6 +726,10 @@
             "TempTooLow": "Temperatura zbyt mała dla {name}! (min: {min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "Regulacja śrub łóżka",
+            "ScrewsTiltCalculate": "Obliczanie nachylenia śrub",
+            "BedTiltCalibrate": "Kalibracja nachylenia łóżka",
+            "DeltaCalibrate": "Kalibracja Delta",
             "Absolute": "Absolutna",
             "ALL": "WSZYSTKIE",
             "Headline": "Sterowanie drukarką",
@@ -741,7 +745,7 @@
             "All": "Wszystkie",
             "FPS": "kl./s",
             "Headline": "Kamera internetowa",
-            "NoWebcam": "Brak dostępnej kamery. Dodaj kamerę w \"Ustawienia Interfejsu\" -> \"Kamera Internetowa\".",
+            "NoWebcam": "Brak dostępnej kamery. Dodaj kamerę w \"Ustawienia\" -> \"Kamera Internetowa\".",
             "UnknownWebcamService": "Nieznana usługa kamery"
         },
         "ZoffsetPanel": {
@@ -935,7 +939,7 @@
             "RestoreDialog": "Proszę wybrać wszystkie sekcje do przywrócenia:",
             "TimeFormat": "Format czasu"
         },
-        "InterfaceSettings": "Ustawienia interfejsu",
+        "InterfaceSettings": "Ustawienia",
         "MacrosTab": {
             "Add": "Dodaj",
             "AddGroup": "Dodaj grupę",
@@ -1233,5 +1237,5 @@
         "Variable": "Zmienne",
         "Video": "Filmy"
     },
-    "title": "Polski"
+    "title": "Polski - PL"
 }

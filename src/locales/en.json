@@ -734,6 +734,10 @@
             "TempTooLow": "Temperature too low for {name}! (min: {min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "Bed Screws Adjust",
+            "ScrewsTiltCalculate": "Screws Tilt Calculate",
+            "BedTiltCalibrate": "Bed Tilt Calibrate",
+            "DeltaCalibrate": "Delta Calibrate",
             "Absolute": "absolute",
             "ALL": "ALL",
             "ControlButtons": "Control buttons",
@@ -1268,5 +1272,5 @@
         "Variable": "Variable",
         "Video": "Video"
     },
-    "title": "English"
+    "title": "English - EN"
 }

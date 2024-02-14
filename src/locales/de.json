@@ -736,6 +736,10 @@
             "TempTooLow": "Temperature von {name} zu niedrig! (min: {min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "Manuelle Kalibrierung",
+            "ScrewsTiltCalculate": "Netz kalibrieren",
+            "BedTiltCalibrate": "Neigung kalibrieren",
+            "DeltaCalibrate": "Delta-Kalibrierung",
             "Absolute": "absolut",
             "ALL": "ALLE",
             "ControlButtons": "Kontrollknöpfe",
@@ -942,7 +946,7 @@
             "FactoryReset": "Werkseinstellungen",
             "General": "Allgemein",
             "Language": "Sprache",
-            "MainsailSettingsMoonrakerDb": "Mainsail Einstellungen in Moonraker DB",
+            "MainsailSettingsMoonrakerDb": "Einstellungen",
             "PrinterName": "Druckername",
             "Reset": "zurücksetzen",
             "Restore": "Wiederherstellung",
@@ -1265,5 +1269,5 @@
         "Variable": "Variabel",
         "Video": "Video"
     },
-    "title": "Deutsch"
+    "title": "Deutsch - DE"
 }

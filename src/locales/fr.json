@@ -730,6 +730,10 @@
             "TempTooLow": "Température trop basse pour {name}! (min: {min})"
         },
         "ToolheadControlPanel": {
+            "BedScrewsAdjust": "Calibrage manuel",
+            "ScrewsTiltCalculate": "Calibrer le maillage",
+            "BedTiltCalibrate": "Calibrer l'inclinaison",
+            "DeltaCalibrate": "Étalonnage Delta",
             "Absolute": "absolue",
             "ALL": "Tous",
             "ControlButtons": "Boutons de commande",
@@ -1253,5 +1257,5 @@
         "Variable": "Variable",
         "Video": "Vidéo"
     },
-    "title": "Français"
+    "title": "Français - FR"
 }
