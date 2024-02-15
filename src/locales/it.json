@@ -708,6 +708,15 @@
             "Unknown": "Sconosciuto"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Tavolo",
+                "ChamberFan": "Camera",
+                "Extruder": "Estrusore",
+                "Extruder1": "Estrusore 1",
+                "Extruder2": "Estrusore 2",
+                "Extruder3": "Estrusore 3",
+                "Extruder4": "Estrusore 4"
+            },
             "AutoscaleChart": "Scala automaticamente il Grafico",
             "Avg": "Medio",
             "Cooldown": "Raffreddamento",

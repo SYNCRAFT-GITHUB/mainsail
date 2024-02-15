@@ -702,6 +702,15 @@
             "Unknown": "Inconnu"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Tableau",
+                "ChamberFan": "Chambre",
+                "Extruder": "Extrudeur",
+                "Extruder1": "Extrudeur 1",
+                "Extruder2": "Extrudeur 2",
+                "Extruder3": "Extrudeur 3",
+                "Extruder4": "Extrudeur 4"
+            },
             "AutoscaleChart": "Echelle automatique",
             "Avg": "Moyenne",
             "Cooldown": "Refroidissement",

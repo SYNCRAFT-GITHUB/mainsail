@@ -122,7 +122,7 @@
         "ScrewOutput": "{current} de {max}"
     },
     "ConnectionDialog": {
-        "CannotConnectTo": "Impossível se conectar ao host ({host}).",
+        "CannotConnectTo": "Não foi possível conectar ({host}).",
         "CheckMoonrakerLog": "Se essa mensagem apareceu várias vezes, veja o arquivo de Logs localizado em:",
         "Connecting": "Conectando ao Host {host}",
         "Failed": "A Conexão Falhou",
@@ -498,9 +498,9 @@
             "KlipperUpdateQuestionFirmware": "Isso atualizará o Firmware. Placas de controle executando o firmware firmware podem precisar ser reprogramadas com firmware recompilado antes que a máquina possa ser colocada de volta em serviço.",
             "LinkToGithub": "Link para o GitHub",
             "MoonrakerUpdateQuestion": "Isso atualizará a API do Moonraker.",
-            "MoreCommitsInfo": "Um máximo de 30 atualizações podem ser exibidos aqui. Para ver todos os commits, clique no link:",
+            "MoreCommitsInfo": "Um máximo de 30 atualizações podem ser exibidos aqui. Para ver todas as atualizações, clique no link:",
             "OSPackages": "Pacotes do Sistema Operacional",
-            "SoftRecovery": "Recuperação Suave",
+            "SoftRecovery": "Recuperação Leve",
             "StartUpdate": "Iniciar Atualização",
             "System": "Sistema",
             "ThesePackagesCanBeUpgrade": "Estes pacotes do sistema podem ser atualizados:",
@@ -662,6 +662,15 @@
             "Unknown": "Desconhecido"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Mesa",
+                "ChamberFan": "Câmara",
+                "Extruder": "Extrusor",
+                "Extruder1": "Extrusor 1",
+                "Extruder2": "Extrusor 2",
+                "Extruder3": "Extrusor 3",
+                "Extruder4": "Extrusor 4"
+            },
             "AutoscaleChart": "Escala Automática",
             "Avg": "Média",
             "Cooldown": "Resfriar",
@@ -836,7 +845,7 @@
             "ZTiltAdjust": "Ajuste Inclinação-Z {isDefault}"
         },
         "DashboardTab": {
-            "Dashboard": "Design",
+            "Dashboard": "Layout",
             "Desktop": "Desktop",
             "Mobile": "Celular",
             "ResetLayout": "Redefinir",

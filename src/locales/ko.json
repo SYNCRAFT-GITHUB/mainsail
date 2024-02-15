@@ -633,6 +633,15 @@
             "Unknown": "알 수 없음"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "테이블",
+                "ChamberFan": "방",
+                "Extruder": "압출기",
+                "Extruder1": "압출기 1",
+                "Extruder2": "압출기 2",
+                "Extruder3": "압출기 3",
+                "Extruder4": "압출기 4"
+            },
             "AutoscaleChart": "자동 변환 그래프",
             "Avg": "평균",
             "Cooldown": "작동 정지",

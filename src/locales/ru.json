@@ -660,6 +660,15 @@
             "Unknown": "Неизвестно"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Стол",
+                "ChamberFan": "Камера",
+                "Extruder": "Экструдер",
+                "Extruder1": "Экструдер 1",
+                "Extruder2": "Экструдер 2",
+                "Extruder3": "Экструдер 3",
+                "Extruder4": "Экструдер 4"
+            },
             "AutoscaleChart": "Автомасштабирование графика",
             "Avg": "Средняя",
             "Cooldown": "Выкл. нагрев",

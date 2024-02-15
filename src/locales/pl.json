@@ -698,6 +698,15 @@
             "Unknown": "Nieznany"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Tabela",
+                "ChamberFan": "Izba",
+                "Extruder": "Wytłaczarki",
+                "Extruder1": "Wytłaczarki 1",
+                "Extruder2": "Wytłaczarki 2",
+                "Extruder3": "Wytłaczarki 3",
+                "Extruder4": "Wytłaczarki 4"
+            },
             "AutoscaleChart": "Autoskaluj wykres",
             "Avg": "Średnia",
             "Cooldown": "Chłodzenie",

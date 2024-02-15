@@ -89,7 +89,7 @@ export default class TempChart extends Mixins(BaseMixin, ThemeMixin) {
                 color: this.fgColorHi,
                 fontSize: '14px',
             },
-            padding: 15,
+            padding: 20,
             formatter: this.tooltipFormatter,
             confine: true,
             className: 'echarts-tooltip',
@@ -210,6 +210,41 @@ export default class TempChart extends Mixins(BaseMixin, ThemeMixin) {
         ]
     }
 
+    name(text: string) {
+
+        let hasTwoExt: boolean = false
+        let sensors = this.$store.state.printer?.heaters?.available_sensors ?? []
+
+        for (let i = 0; i < sensors.length; i++) {
+            if (sensors[i] == "extruder1") {
+                hasTwoExt = true;
+                break;
+            }
+        }
+
+        switch (text) {
+            case "extruder":
+                if (hasTwoExt == true) {
+                    return this.$t('Panels.TemperaturePanel.Item.Extruder1')
+                } else {
+                    return this.$t('Panels.TemperaturePanel.Item.Extruder')
+                }
+            case "extruder1":
+                return this.$t('Panels.TemperaturePanel.Item.Extruder2')
+            case "heater_bed":
+                return this.$t('Panels.TemperaturePanel.Item.HeaterBed')
+            case "chamber_fan":
+                return this.$t('Panels.TemperaturePanel.Item.ChamberFan')
+            default:
+                break;
+        }
+
+        const splits = text.split(' ')
+        if (splits.length === 1) return text
+
+        return splits[1]
+    }
+
     get chart(): ECharts | null {
         return this.$refs.tempchart?.chart ?? null
     }
@@ -311,7 +346,7 @@ export default class TempChart extends Mixins(BaseMixin, ThemeMixin) {
 
             output += '<div class="col-auto py-0">'
             output += dataset.marker
-            output += "<span class='ml-2'>" + convertName(displayName) + ':</span>'
+            output += "<span class='ml-2'>" + this.name(displayName) + ':</span>'
             output += '</div>'
 
             output += '<div class="col text-right py-0 font-weight-bold">'

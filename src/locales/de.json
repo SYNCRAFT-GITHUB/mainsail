@@ -708,6 +708,15 @@
             "Unknown": "Unbekannt"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Tisch",
+                "ChamberFan": "Kammer",
+                "Extruder": "Extruder",
+                "Extruder1": "Extruder 1",
+                "Extruder2": "Extruder 2",
+                "Extruder3": "Extruder 3",
+                "Extruder4": "Extruder 4"
+            },
             "AutoscaleChart": "Autoskalierung",
             "Avg": "Ø",
             "Cooldown": "Abkühlen",

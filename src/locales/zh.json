@@ -706,6 +706,15 @@
             "Unknown": "未知"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "桌子",
+                "ChamberFan": "室",
+                "Extruder": "挤出机",
+                "Extruder1": "挤出机1",
+                "Extruder2": "挤出机2",
+                "Extruder3": "挤出机3",
+                "Extruder4": "挤出机4"
+            },
             "AutoscaleChart": "自动调整图表比例",
             "Avg": "平均",
             "Cooldown": "冷却",

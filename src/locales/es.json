@@ -675,6 +675,15 @@
             "Unknown": "Desconocido"
         },
         "TemperaturePanel": {
+            "Item": {
+                "HeaterBed": "Mesa",
+                "ChamberFan": "Cámara",
+                "Extruder": "Extrusor",
+                "Extruder1": "Extrusor 1",
+                "Extruder2": "Extrusor 2",
+                "Extruder3": "Extrusor 3",
+                "Extruder4": "Extrusor 4"
+            },
             "AutoscaleChart": "Autoescalar gráfico",
             "Avg": "Promedio",
             "Cooldown": "Enfriar",

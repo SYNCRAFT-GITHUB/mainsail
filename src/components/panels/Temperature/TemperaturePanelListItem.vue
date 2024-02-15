@@ -100,6 +100,34 @@ export default class TemperaturePanelListItem extends Mixins(BaseMixin) {
     }
 
     get name() {
+
+        let hasTwoExt: boolean = false
+        let sensors = this.$store.state.printer?.heaters?.available_sensors ?? []
+
+        for (let i = 0; i < sensors.length; i++) {
+            if (sensors[i] == "extruder1") {
+                hasTwoExt = true;
+                break;
+            }
+        }
+
+        switch (this.objectName) {
+            case "extruder":
+                if (hasTwoExt == true) {
+                    return this.$t('Panels.TemperaturePanel.Item.Extruder1')
+                } else {
+                    return this.$t('Panels.TemperaturePanel.Item.Extruder')
+                }
+            case "extruder1":
+                return this.$t('Panels.TemperaturePanel.Item.Extruder2')
+            case "heater_bed":
+                return this.$t('Panels.TemperaturePanel.Item.HeaterBed')
+            case "temperature_fan chamber_fan":
+                return this.$t('Panels.TemperaturePanel.Item.ChamberFan')
+            default:
+                break;
+        }
+
         const splits = this.objectName.split(' ')
         if (splits.length === 1) return this.objectName
 
