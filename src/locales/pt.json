@@ -361,6 +361,7 @@
             "completed": "Completo",
             "error": "Erro",
             "in_progress": "Em progresso",
+            "interrupted": "Interrompido",
             "klippy_disconnect": "Firmware desconectou",
             "klippy_shutdown": "Firmware desligou",
             "Others": "Outros",

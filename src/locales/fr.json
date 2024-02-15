@@ -374,6 +374,7 @@
             "completed": "Terminé",
             "error": "Erreur",
             "in_progress": "En cours",
+            "interrupted": "Interrompu",
             "klippy_disconnect": "Déconnexion de Klippy",
             "klippy_shutdown": "Arrêt Klippy",
             "Others": "Autres",

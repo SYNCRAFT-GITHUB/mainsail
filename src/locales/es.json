@@ -370,6 +370,7 @@
             "completed": "Completado",
             "error": "Error",
             "in_progress": "En progreso",
+            "interrupted": "Interrumpido",
             "klippy_disconnect": "Klippy desconectado",
             "klippy_shutdown": "Klippy apagado",
             "Others": "Otros",

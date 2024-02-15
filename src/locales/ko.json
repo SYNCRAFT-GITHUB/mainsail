@@ -358,6 +358,7 @@
             "completed": "종료",
             "error": "오류",
             "in_progress": "출력 중",
+            "interrupted": "중단된",
             "klippy_disconnect": "클리피 연결 해제",
             "klippy_shutdown": "클리피 종료",
             "Others": "기타",

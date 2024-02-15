@@ -120,7 +120,7 @@
         }
     },
     "BedScrews": {
-        "Abort": "przerwij",
+        "Abort": "anulować",
         "Accept": "Akceptuj",
         "Adjusted": "wyregulowano",
         "Description": "Kliknij <b>WYREGULOWANO</b>, jeśli bieżąca śruba została wyregulowana. Kliknij <b>AKCEPTUJ</b>, aby kontynuować bez regulacji.",
@@ -171,7 +171,7 @@
         "Uploading": "Wgrywanie"
     },
     "EmergencyStopDialog": {
-        "AreYouSure": "Czy na pewno?",
+        "AreYouSure": "Jesteś pewny?",
         "EmergencyStop": "Awaryjny STOP",
         "No": "Nie",
         "Yes": "Tak"
@@ -374,6 +374,7 @@
             "completed": "Ukończono",
             "error": "Błąd",
             "in_progress": "W trakcie",
+            "interrupted": "Przerwano",
             "klippy_disconnect": "Klipper został rozłączony",
             "klippy_shutdown": "Zamykanie Klippera",
             "Others": "Pozostałe",
@@ -483,7 +484,7 @@
             }
         },
         "UpdatePanel": {
-            "Abort": "Przerwij",
+            "Abort": "anulować",
             "AreYouSure": "Czy na pewno?",
             "CheckForUpdates": "Sprawdź dostępność aktualizacji",
             "Close": "Zamknij",
@@ -528,7 +529,7 @@
         }
     },
     "ManualProbe": {
-        "Abort": "przerwij",
+        "Abort": "anulować",
         "Accept": "Akceptuj",
         "Advanced": "Zaawansowane",
         "Headline": "Ręczne sondowanie"
@@ -674,7 +675,7 @@
             "Max": "Maks.",
             "ObjectHeight": "Wysokość obiektu",
             "PauseAtLayer": {
-                "Abort": "przerwij",
+                "Abort": "anulować",
                 "Accept": "Akceptuj",
                 "AtLayer": "na warstwie",
                 "Call": "Wywołaj",

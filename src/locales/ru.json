@@ -362,6 +362,7 @@
             "completed": "Завершено",
             "error": "Ошибка",
             "in_progress": "В процессе",
+            "interrupted": "Прервано",
             "klippy_disconnect": "Klippy откл.",
             "klippy_shutdown": "Klippy выкл.",
             "Others": "Прочее",

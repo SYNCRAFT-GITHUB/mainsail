@@ -357,8 +357,9 @@
             "completed": "完了",
             "error": "エラー",
             "in_progress": "進行中",
-            "klippy_disconnect": "Klippy切断",
-            "klippy_shutdown": "Klippyシャットダウン",
+            "interrupted": "中断されました",
+            "klippy_disconnect": "ファームウェアから切断されました",
+            "klippy_shutdown": "ファームウェアがオフになっています",
             "Others": "その他",
             "server_exit": "サーバー終了"
         },
