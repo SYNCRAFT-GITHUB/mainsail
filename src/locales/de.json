@@ -403,7 +403,8 @@
         "Jobs": "Aufträge",
         "Pause": "Pause",
         "RemoveFromQueue": "Von Auftragswarteschlange entfernen",
-        "Start": "Start"
+        "Start": "Start",
+        "StartPrint": "Start"
     },
     "Machine": {
         "ConfigFilesPanel": {

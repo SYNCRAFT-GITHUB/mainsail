@@ -417,7 +417,7 @@
             "DeleteDirectory": "Delete Directory",
             "DeleteDirectoryQuestion": "Delete directory \"{name}\" and all its contents?",
             "DeleteSelectedQuestion": "Delete {count} selected elements?",
-            "DeleteSingleFileQuestion": "Do you really want to delete the file \"{name}\"?",
+            "DeleteSingleFileQuestion": "Delete \"{name}\"?",
             "Download": "Download",
             "Duplicate": "Duplicate",
             "DuplicateFile": "Duplicate File",

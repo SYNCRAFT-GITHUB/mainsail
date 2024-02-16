@@ -406,6 +406,7 @@
             "DeleteDirectory": "Удалить директорию",
             "DeleteDirectoryQuestion": "Удалить директорию \"{name}\" и всё её содержимое?",
             "DeleteSelectedQuestion": "Удалить выбранные элементы ({count} шт.)?",
+            "DeleteSingleFileQuestion": "Удалить \"{name}\"?",
             "Download": "Скачать",
             "Duplicate": "Копировать",
             "DuplicateFile": "Копировать",

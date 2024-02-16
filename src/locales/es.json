@@ -172,7 +172,7 @@
         "Yes": "Sí"
     },
     "Files": {
-        "AddBatchToQueue": "Añadir lote a la fila",
+        "AddBatchToQueue": "Añadir lote",
         "AddToQueue": "Añadir a la fila",
         "AllFiles": "Todos",
         "BedTemp": "Temp. Cama",
@@ -398,7 +398,8 @@
         "Jobs": "Tareas",
         "Pause": "Pausar",
         "RemoveFromQueue": "Remover de la cola",
-        "Start": "Iniciar"
+        "Start": "Iniciar",
+        "StartPrint": "Iniciar"
     },
     "Machine": {
         "ConfigFilesPanel": {
@@ -414,7 +415,7 @@
             "DeleteDirectory": "Eliminar carpeta",
             "DeleteDirectoryQuestion": "¿Realmente quiere eliminar \"{name}\" con todo su contenido?",
             "DeleteSelectedQuestion": "¿Eliminar {count} elementos seleccionados?",
-            "DeleteSingleFileQuestion": "¿Realmente quieres borrar el archivo \"{name}\"?",
+            "DeleteSingleFileQuestion": "¿Quieres borrar el archivo \"{name}\"?",
             "Download": "Descargar",
             "Duplicate": "Duplicar",
             "DuplicateFile": "Duplicar Archivo",

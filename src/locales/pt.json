@@ -68,14 +68,14 @@
             "Cancel": "Cancelar",
             "ConfirmationDialog": {
                 "Description": {
-                    "HostReboot": "A reinicialização do host fará com que a impressão atual falhe!",
-                    "HostShutdown": "Desligar o Host fará com que a impressão atual falhe!",
-                    "KlipperFirmwareRestart": "Reiniciar o Firmware fará com que a impressão atual falhe!",
-                    "KlipperRestart": "Reiniciar o Firmware fará com que a impressão atual falhe!",
-                    "KlipperStop": "Parar o Firmware fará com que a impressão atual falhe!",
-                    "ServiceRestart": "Reiniciar este serviço pode causar falha na impressão atual!",
-                    "ServiceStart": "Iniciar este serviço pode fazer com que a impressão atual falhe!",
-                    "ServiceStop": "Interromper este serviço pode fazer com que a impressão atual falhe!"
+                    "HostReboot": "A reinicialização fará com que a impressão falhe!",
+                    "HostShutdown": "Desligar fará com que a impressão falhe!",
+                    "KlipperFirmwareRestart": "Reiniciar o Firmware fará com que a impressão falhe!",
+                    "KlipperRestart": "Reiniciar o Firmware fará com que a impressão falhe!",
+                    "KlipperStop": "Parar o Firmware fará com que a impressão falhe!",
+                    "ServiceRestart": "Reiniciar este serviço pode falhar a impressão!",
+                    "ServiceStart": "Iniciar este serviço pode fazer com que a impressão falhe!",
+                    "ServiceStop": "Interromper este serviço pode fazer com que a impressão falhe!"
                 },
                 "Title": {
                     "HostReboot": "Reinicialização do host",
@@ -167,13 +167,13 @@
         "Yes": "Sim"
     },
     "Files": {
-        "AddBatchToQueue": "Adicionar todos os arquivos na Fila",
-        "AddToQueue": "Adicionar na Fila",
+        "AddBatchToQueue": "Adicionar vários na Fila",
+        "AddToQueue": "Adicionar",
         "AllFiles": "Todos",
         "BedTemp": "Temp. da Mesa.",
         "Cancel": "Cancelar",
         "ChamberTemp": "Temp. da Câmara.",
-        "Count": "Quantia",
+        "Count": "Quantidade",
         "Create": "Criar",
         "CreateNewDirectory": "Criar nova Pasta",
         "CurrentPath": "Caminho Atual",
@@ -181,7 +181,10 @@
         "DeleteDirectory": "Deletar Pasta/Caminho",
         "DeleteDirectoryQuestion": "Você realmente deseja excluir a Pasta/Caminho \"{name}\"?",
         "DeleteSelectedQuestion": "Você realmente deseja excluir os {count} arquivos selecionados?",
+        "DeleteSingleFileQuestion": "Deletar \"{name}\"?",
         "Download": "Fazer Download",
+        "Duplicate": "Duplicar",
+        "DuplicateFile": "Duplicar Arquivo",
         "EditFile": "Editar Arquivo",
         "Empty": "Vazio",
         "ExtruderTemp": "Temp. do Extrusor.",
@@ -380,8 +383,8 @@
     "JobQueue": {
         "AllJobs": "Todos as Impressões",
         "Cancel": "Cancelar",
-        "ChangeCount": "Alterar contagem",
-        "Count": "Contagem",
+        "ChangeCount": "Alterar quantidade",
+        "Count": "Quantidade",
         "Empty": "Vazio",
         "InvalidCountEmpty": "O Campo não deve estar vazio!",
         "InvalidCountGreaterZero": "O Número do campo deve ser maior que zero!",
@@ -389,7 +392,8 @@
         "Jobs": "Impressões",
         "Pause": "Pausa",
         "RemoveFromQueue": "Remover da fila",
-        "Start": "Iniciar"
+        "Start": "Iniciar",
+        "StartPrint": "Iniciar"
     },
     "Machine": {
         "ConfigFilesPanel": {

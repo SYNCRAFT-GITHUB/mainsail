@@ -400,7 +400,8 @@
         "JobQueue": "Kolejka wydruków",
         "Pause": "Pauza",
         "RemoveFromQueue": "Usuń z kolejki",
-        "Start": "Start"
+        "Start": "Start",
+        "StartPrint": "Start"
     },
     "Machine": {
         "ConfigFilesPanel": {
