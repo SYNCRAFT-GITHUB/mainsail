@@ -514,7 +514,7 @@
             "MoonrakerUpdateQuestion": "This will update the Moonraker API. Changes to the moonraker.conf file may be required to continue using the machine.",
             "MoreCommitsInfo": "A maximum of 30 commits can be displayed here. To see all commits, please click on the following link:",
             "OSPackages": "OS-Packages",
-            "SoftRecovery": "Soft Recovery",
+            "SoftRecovery": "Resync Files",
             "StartUpdate": "Start Update",
             "System": "System",
             "ThesePackagesCanBeUpgrade": "These system packages can be upgraded:",

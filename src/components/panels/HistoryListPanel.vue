@@ -154,7 +154,7 @@
                                 <v-icon>{{ mdiFile }}</v-icon>
                             </template>
                         </td>
-                        <td class=" ">{{ item.filename }}</td>
+                        <td class=" ">{{ cleanFileName(item.filename) }}</td>
                         <td class="text-right text-no-wrap">
                             <template v-if="'note' in item && item.note">
                                 <v-tooltip top>
@@ -868,6 +868,16 @@ export default class HistoryListPanel extends Mixins(BaseMixin) {
 
     advancedSearch(value: string, search: string) {
         return value != null && search != null && value.toString().toLowerCase().indexOf(search.toLowerCase()) !== -1
+    }
+
+    cleanFileName(filename: string): string {
+        const parts = filename.split("/");
+        let fileName = parts[parts.length - 1];
+        fileName = fileName.split(".")[0];
+        fileName = fileName.replace("SX1_", "");
+        fileName = fileName.replace("SX2_", "");
+        fileName = fileName.replaceAll("_", " ");
+        return fileName;
     }
 
     getSmallThumbnail(item: ServerHistoryStateJob) {

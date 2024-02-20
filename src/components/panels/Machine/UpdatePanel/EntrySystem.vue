@@ -22,7 +22,7 @@
                     class="minwidth-0 px-2 text-uppercase"
                     @click="doUpdate">
                     <v-icon small class="mr-1">{{ btnIcon }}</v-icon>
-                    {{ btnText }}
+                    &nbsp;{{ btnText }}
                 </v-chip>
             </v-col>
         </v-row>
@@ -36,10 +36,11 @@
 <script lang="ts">
 import { Component, Mixins } from 'vue-property-decorator'
 import BaseMixin from '@/components/mixins/base'
-import { mdiCheck, mdiInformation, mdiProgressUpload } from '@mdi/js'
+import { mdiInformation, mdiCloudDownload, mdiCloudOutline } from '@mdi/js'
 @Component
 export default class UpdatePanelEntrySystem extends Mixins(BaseMixin) {
     mdiInformation = mdiInformation
+    mdiCloudOutline = mdiCloudOutline
 
     // to display the dialog for packages
     boolShowPackageList = false
@@ -61,9 +62,9 @@ export default class UpdatePanelEntrySystem extends Mixins(BaseMixin) {
     }
 
     get btnIcon() {
-        if (this.package_count) return mdiProgressUpload
+        if (this.package_count) return mdiCloudDownload
 
-        return mdiCheck
+        return mdiCloudOutline
     }
 
     get btnColor() {

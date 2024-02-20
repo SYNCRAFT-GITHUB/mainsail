@@ -58,8 +58,8 @@
         },
         "TopBar": {
             "CannotUploadTheFile": "Não é possível carregar o arquivo!",
-            "EmergencyStop": "Parada de emergência",
-            "SAVE_CONFIG": "Salvar configuração",
+            "EmergencyStop": "Emergência",
+            "SAVE_CONFIG": "Salvar config",
             "Uploading": "Enviando",
             "UploadOfFileSuccessful": "{file} enviado com sucesso!",
             "UploadPrint": "Enviar e imprimir"
@@ -105,7 +105,7 @@
             "Close": "Fechar",
             "Empty": "Vazio",
             "Recovering": "Recuperando {software}...",
-            "RecoveringDone": "Recuperação de {software} concluída!",
+            "RecoveringDone": "Procedimento para {software} concluído!",
             "Updating": "Atualizando {software}...",
             "UpdatingDone": "Atualização do {software} concluída!"
         }
@@ -125,7 +125,7 @@
         "CannotConnectTo": "Não foi possível conectar ({host}).",
         "CheckMoonrakerLog": "Se essa mensagem apareceu várias vezes, veja o arquivo de Logs localizado em:",
         "Connecting": "Conectando ao Host {host}",
-        "Failed": "A Conexão Falhou",
+        "Failed": "Sem Conexão",
         "Initializing": "Iniciando",
         "TryAgain": "Tentar novamente"
     },
@@ -329,7 +329,7 @@
         "FilamentCalc": "Calc. Filamento",
         "FilamentUsage": "Uso de Filamento",
         "FilamentUsed": "Filamento usado",
-        "Filename": "Arquivo",
+        "Filename": "Nome",
         "Filesize": "Tamanho do arquivo",
         "FirstLayerBedTemp": "Temp. da Mesa (1a camada)",
         "FirstLayerExtTemp": "Temp. de Extrusão (1a camada)",
@@ -495,7 +495,7 @@
             "Dirty": "modificado",
             "GenericUpdateQuestion": "Verifique o histórico de atualizações (se disponível) e a página GitHub para ver se são necessários ajustes manuais para esta atualização.",
             "GitHubPage": "Página do GitHub",
-            "HardRecovery": "Recuperação Bruta",
+            "HardRecovery": "Redefinir Arquivos",
             "InitUpdateManager": "O Gerenciador de Atualizações ainda não foi inicializado. Isso é normal quando você inicia o sistema pela primeira vez. Clique no botão de atualizar para inicializar todos os componentes.",
             "Invalid": "inválido",
             "IUnderstandTheRisks": "Entendo os riscos",
@@ -505,7 +505,7 @@
             "MoonrakerUpdateQuestion": "Isso atualizará a API do Moonraker.",
             "MoreCommitsInfo": "Um máximo de 30 atualizações podem ser exibidos aqui. Para ver todas as atualizações, clique no link:",
             "OSPackages": "Pacotes do Sistema Operacional",
-            "SoftRecovery": "Recuperação Leve",
+            "SoftRecovery": "Ressincronizar",
             "StartUpdate": "Iniciar Atualização",
             "System": "Sistema",
             "ThesePackagesCanBeUpgrade": "Estes pacotes do sistema podem ser atualizados:",
@@ -721,7 +721,7 @@
             "SettingsInterfaceControl": "Ajustes > Interface > Controle",
             "SpeedFactor": "Fator de Velocidade",
             "ZOffset": "Offset-Z",
-            "ZTilt": "Inclinação-Z"
+            "ZTilt": "Z TILT"
         },
         "WebcamPanel": {
             "All": "Todos",
@@ -847,7 +847,7 @@
             "ZOffsetIncrements": "Pré-definições Offset-Z (mm)",
             "ZOffsetSaveOption": "Salvar Offset-Z",
             "ZOffsetSaveOptionDescription": "Altera forma de salvar o Offset do Eixo Z.",
-            "ZTiltAdjust": "Ajuste Inclinação-Z {isDefault}"
+            "ZTiltAdjust": "Ajuste Z TILT {isDefault}"
         },
         "DashboardTab": {
             "Dashboard": "Layout",
@@ -1090,7 +1090,7 @@
             "BoolHideUploadAndPrintButton": "Ocultar botão para Enviar Arquivo",
             "BoolHideUploadAndPrintButtonDescription": "Mostrar ou ocultar o botão de enviar arquivo na barra superior.",
             "ConfirmOnEmergencyStop": "Confirmação extra na Parada de Emergência.",
-            "ConfirmOnEmergencyStopDescription": "Exibe caixa de diálogo ao acionar a Parada de Emergência.",
+            "ConfirmOnEmergencyStopDescription": "Exibe caixa de diálogo ao acionar a Parada de Emergência no botão \"Emergência\".",
             "ConfirmOnPowerDeviceChange": "Confirmação nas alterações de Energia.",
             "ConfirmOnPowerDeviceChangeDescription": "Exibe uma caixa de diálogo ao realizar alterações na energia do dispositivo.",
             "DefaultNavigationState": "Estado padrão de navegação",
@@ -1106,7 +1106,7 @@
             "GcodeThumbnailsDescription": "Clique no botão para obter instruções.",
             "Guide": "Guia",
             "HideSaveConfigButtonForBedMesh": "Ocultar botão de salvar configuração ao realizar alterações na malha.",
-            "HideSaveConfigButtonForBedMeshDescription": "Oculta botão de salvar configuração se as alterações na malha da mesa estiverem pendentes para serem salvas.",
+            "HideSaveConfigButtonForBedMeshDescription": "Oculta botão de salvar configuração (Salvar Config) se as alterações na malha da mesa estiverem pendentes para serem salvas.",
             "HideUpdateWarnings": "Ocultar avisos de atualização",
             "HideUpdateWarningsDescription": "Oculta todos os avisos de atualização.",
             "LockSliders": "Bloquear o slider em dispositivos touchscreen.",

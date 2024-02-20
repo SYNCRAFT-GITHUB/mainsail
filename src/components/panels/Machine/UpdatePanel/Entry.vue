@@ -42,14 +42,14 @@
                                 v-bind="attrs"
                                 v-on="on">
                                 <v-icon small class="mr-1">{{ btnIcon }}</v-icon>
-                                {{ btnText }}
+                                &nbsp;{{ btnText }}
                                 <v-icon small>{{ mdiMenuDown }}</v-icon>
                             </v-chip>
                         </template>
                         <v-list dense class="py-0">
                             <v-list-item v-if="!isCorrupt" @click="doRecovery(false)">
                                 <v-list-item-icon class="mr-0 pt-1">
-                                    <v-icon small>{{ mdiReload }}</v-icon>
+                                    <v-icon small>{{ mdiCloudSync }}</v-icon>
                                 </v-list-item-icon>
                                 <v-list-item-content>
                                     <v-list-item-title>{{ $t('Machine.UpdatePanel.SoftRecovery') }}</v-list-item-title>
@@ -57,7 +57,7 @@
                             </v-list-item>
                             <v-list-item :disabled="!existsRecoveryUrl" @click="doRecovery(true)">
                                 <v-list-item-icon class="mr-0 pt-1">
-                                    <v-icon small>{{ mdiReload }}</v-icon>
+                                    <v-icon small>{{ mdiCloudBraces }}</v-icon>
                                 </v-list-item-icon>
                                 <v-list-item-content>
                                     <v-list-item-title>{{ $t('Machine.UpdatePanel.HardRecovery') }}</v-list-item-title>
@@ -76,11 +76,11 @@
                     class="minwidth-0 px-2 text-uppercase"
                     @click="clickUpdate">
                     <v-icon small class="mr-1">{{ btnIcon }}</v-icon>
-                    {{ btnText }}
+                    &nbsp;{{ btnText }}
                 </v-chip>
             </v-col>
         </v-row>
-        <v-row v-if="warnings.length" class="mt-0">
+        <v-row v-if="warnings.length && isLoggedIn" class="mt-0">
             <v-col class="px-6 pt-0">
                 <v-alert
                     v-for="(message, index) in warnings"
@@ -129,12 +129,15 @@ import { ServerUpdateManagerStateGitRepo } from '@/store/server/updateManager/ty
 import { adminState } from '@/admin'
 import {
     mdiCloseCircle,
-    mdiCheck,
     mdiHelpCircleOutline,
     mdiInformation,
+    mdiCloudOutline,
+    mdiCloudOffOutline,
     mdiInformationOutline,
+    mdiCloudDownload,
+    mdiCloudSync,
     mdiMenuDown,
-    mdiProgressUpload,
+    mdiCloudBraces,
     mdiReload,
     mdiUpdate,
 } from '@mdi/js'
@@ -148,9 +151,14 @@ export default class UpdatePanelEntry extends Mixins(BaseMixin) {
     mdiInformation = mdiInformation
     mdiMenuDown = mdiMenuDown
     mdiReload = mdiReload
+    mdiCloudBraces = mdiCloudBraces
+    mdiCloudOffOutline = mdiCloudOffOutline
+    mdiCloudSync = mdiCloudSync
     mdiCloseCircle = mdiCloseCircle
+    mdiCloudOutline = mdiCloudOutline
     mdiUpdate = mdiUpdate
     mdiInformationOutline = mdiInformationOutline
+    mdiCloudDownload = mdiCloudDownload
 
     isLoggedIn = adminState.isAdmin
 
@@ -274,17 +282,17 @@ export default class UpdatePanelEntry extends Mixins(BaseMixin) {
     }
 
     get btnIcon() {
-        if (this.isDetached || !this.isValid || this.isCorrupt || this.isDirty) return mdiCloseCircle
+        if (this.isDetached || !this.isValid || this.isCorrupt || this.isDirty) return mdiCloudOffOutline
 
         if (
             this.commitsBehind.length ||
             (this.localVersion && this.remoteVersion && semver.gt(this.remoteVersion, this.localVersion))
         )
-            return mdiProgressUpload
+            return mdiCloudDownload
 
         if (this.localVersion === null || this.remoteVersion === null) return mdiHelpCircleOutline
 
-        return mdiCheck
+        return mdiCloudOutline
     }
 
     get btnColor() {

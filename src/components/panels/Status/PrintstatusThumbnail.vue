@@ -114,7 +114,6 @@ export default class StatusPanelPrintstatusThumbnail extends Mixins(BaseMixin) {
         fileName = fileName.replace("SX1_", "");
         fileName = fileName.replace("SX2_", "");
         fileName = fileName.replaceAll("_", " ");
-        fileName = fileName.replace(/\b\w/g, (match) => match.toUpperCase())
         return fileName;
     }
 
