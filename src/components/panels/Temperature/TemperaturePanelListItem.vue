@@ -6,7 +6,7 @@
             </v-icon>
         </td>
         <td class="name">
-            <span class="cursor-pointer" @click="showEditDialog = true">{{ formatName }}</span>
+            <span class="cursor-pointer" @click="showEditDialog = true">{{ niceName }}</span>
         </td>
         <td v-if="!isResponsiveMobile" class="state">
             <v-tooltip v-if="state !== null" top>
@@ -52,7 +52,7 @@
             :bool-show="showEditDialog"
             :object-name="objectName"
             :name="name"
-            :format-name="formatName"
+            :format-name="niceName"
             :additional-sensor-name="additionalSensorName"
             :icon="icon"
             :color="color"
@@ -99,7 +99,7 @@ export default class TemperaturePanelListItem extends Mixins(BaseMixin) {
         return this.$store.state.printer?.configfile?.settings[lowerCaseObjectName]
     }
 
-    get name() {
+    get niceName() {
 
         let hasTwoExt: boolean = false
         let sensors = this.$store.state.printer?.heaters?.available_sensors ?? []
@@ -128,6 +128,13 @@ export default class TemperaturePanelListItem extends Mixins(BaseMixin) {
                 break;
         }
 
+        let splits = this.objectName.split(' ')
+        if (splits.length === 1) return this.objectName
+
+        return splits[1]
+    }
+
+    get name() {
         const splits = this.objectName.split(' ')
         if (splits.length === 1) return this.objectName
 

@@ -58,7 +58,7 @@
         },
         "TopBar": {
             "CannotUploadTheFile": "Não é possível carregar o arquivo!",
-            "EmergencyStop": "Emergência",
+            "EmergencyStop": "Parada de Emergência",
             "SAVE_CONFIG": "Salvar config",
             "Uploading": "Enviando",
             "UploadOfFileSuccessful": "{file} enviado com sucesso!",
