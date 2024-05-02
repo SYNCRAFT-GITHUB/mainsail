@@ -323,6 +323,7 @@
         "CreateNote": "노트 생성",
         "Delete": "삭제",
         "DeleteSelectedQuestion": "{count}개의 선택된 작업을 삭제하시겠습니까?",
+        "DeleteSingleJobQuestion": "삭제?",
         "Details": "세부정보",
         "EditNote": "노트 수정",
         "Empty": "비어있음",

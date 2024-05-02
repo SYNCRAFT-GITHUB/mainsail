@@ -322,6 +322,7 @@
         "CreateNote": "Добавить примечание",
         "Delete": "Удалить",
         "DeleteSelectedQuestion": "Удалить выбранные задачи ({count} шт.)?",
+        "DeleteSingleJobQuestion": "Удалить?",
         "Details": "Подробности",
         "EditNote": "Редактировать примечание",
         "Empty": "Пусто",

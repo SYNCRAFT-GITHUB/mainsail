@@ -323,6 +323,7 @@
         "CreateNote": "Criar nota",
         "Delete": "Excluir",
         "DeleteSelectedQuestion": "Você realmente deseja excluir {count} impressões selecionadas?",
+        "DeleteSingleJobQuestion": "Excluir?",
         "Details": "Detalhes",
         "EditNote": "Editar nota",
         "Empty": "Vazio",

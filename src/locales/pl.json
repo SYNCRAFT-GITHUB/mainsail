@@ -333,7 +333,7 @@
         "CreateNote": "Stwórz notatkę",
         "Delete": "Usuń",
         "DeleteSelectedQuestion": "Czy aby na pewno chcesz usunąć {count} wybranych wydruków?",
-        "DeleteSingleJobQuestion": "Czy na pewno chcesz usunąć zadanie?",
+        "DeleteSingleJobQuestion": "Usuwać?",
         "Details": "Szczegóły",
         "EditNote": "Edytuj notatkę",
         "Empty": "puste",

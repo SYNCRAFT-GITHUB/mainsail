@@ -335,7 +335,7 @@
         "CreateNote": "Notiz anlegen",
         "Delete": "Löschen",
         "DeleteSelectedQuestion": "Sollen wirklich {count} ausgewählte Jobs gelöscht werden?",
-        "DeleteSingleJobQuestion": "Soll der Job wirklich gelöscht werden?",
+        "DeleteSingleJobQuestion": "Löschen?",
         "Details": "Details",
         "EditNote": "Notiz bearbeiten",
         "Empty": "leer",

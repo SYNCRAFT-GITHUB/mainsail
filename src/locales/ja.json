@@ -322,6 +322,7 @@
         "CreateNote": "メモ作成",
         "Delete": "削除",
         "DeleteSelectedQuestion": "選択された {count}個のジョブを削除します。よろしいですか？",
+        "DeleteSingleJobQuestion": "消去？",
         "Details": "詳細",
         "EditNote": "ノート編集",
         "Empty": "空",

@@ -32,24 +32,6 @@
                             </span>
                         </v-tooltip>
                     </v-list-item>
-                    <!-- FILAMENT LOAD -->
-                    <v-list-item v-if="loadFilamentMacro">
-                        <v-tooltip top :disabled="canExecuteLoadMacro" color="secondary">
-                            <template #activator="{ on }">
-                                <div v-on="on">
-                                    <macro-button
-                                        :macro="loadFilamentMacro"
-                                        :alias="$t('Panels.ExtruderControlPanel.LoadFilament')"
-                                        :disabled="!canExecuteLoadMacro || printerIsPrintingOnly"
-                                        color="#272727" />
-                                </div>
-                            </template>
-                            <span>
-                                {{ $t('Panels.ExtruderControlPanel.ExtruderTempTooLow') }}
-                                {{ minExtrudeTemp }} °C
-                            </span>
-                        </v-tooltip>
-                    </v-list-item>
                     <!-- FILAMENT PURGE -->
                     <v-list-item v-if="purgeFilamentMacro">
                         <v-tooltip top :disabled="canExecutePurgeMacro" color="secondary">
