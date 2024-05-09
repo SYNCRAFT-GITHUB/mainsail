@@ -548,6 +548,8 @@
             "CleanNozzle": "Düse reinigen",
             "EstimatedExtrusion": "Extrusion:",
             "Extrude": "Extrudieren",
+            "Extruder": "Extruder",
+            "Feeder": "Zubringer",
             "ExtruderControl": "Extrusionskontrolle",
             "ExtruderTempTooLow": "Extruder Temp. <",
             "ExtrusionFactor": "Extrusionsfaktor",

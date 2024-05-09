@@ -546,6 +546,8 @@
             "CleanNozzle": "Nettoyage de la buse",
             "EstimatedExtrusion": "Extrusion:",
             "Extrude": "Extrusion",
+            "Extruder": "Extrudeur",
+            "Feeder": "Mangeoire",
             "ExtruderTempTooLow": "Température d'extrusion trop basse",
             "ExtrusionFactor": "Facteur d'extrusion",
             "ExtrusionFeedrate": "Vitesse d'extrusion",
@@ -767,7 +769,7 @@
             "All": "Tous",
             "FPS": "IPS",
             "Headline": "Caméra",
-            "NoWebcam": "Aucune webcam n'est disponible. Ajouter une webcam sous \"Réglages interface\" -> \"Caméras\".",
+            "NoWebcam": "Aucune webcam n'est disponible. Ajouter une webcam sous \"Interface\" -> \"Caméras\".",
             "UnknownWebcamService": "Service Caméra inconnu"
         },
         "ZoffsetPanel": {
@@ -837,7 +839,7 @@
         "Cancel": "Annuler",
         "Close": "Fermer",
         "ConsoleTab": {
-            "AddFilter": "ajouter un filtre",
+            "AddFilter": "ajouter",
             "Console": "Console",
             "CreateHeadline": "Créer un filtre",
             "Direction": "Direction",
@@ -853,7 +855,7 @@
             "HideTimelapse": "Cacher le timelapse",
             "Name": "Nom",
             "Regex": "Regex",
-            "StoreButton": "Ajouter un filtre",
+            "StoreButton": "Ajouter",
             "UpdateButton": "Mise à jour du filtre"
         },
         "ControlTab": {
@@ -954,7 +956,7 @@
             "FactoryReset": "Réinitialisation d'usine",
             "General": "Général",
             "Language": "Langue",
-            "MainsailSettingsMoonrakerDb": "Réglages de Mainsail dans Moonraker DB",
+            "MainsailSettingsMoonrakerDb": "Enregistrer les ajustements",
             "PrinterName": "Nom de l'imprimante",
             "Reset": "réinitialiser",
             "Restore": "Restaurer",
@@ -973,10 +975,10 @@
                 "Spring": "Printemps"
             }
         },
-        "InterfaceSettings": "Réglages interface",
+        "InterfaceSettings": "Interface",
         "MacrosTab": {
             "Add": "ajouter",
-            "AddGroup": "ajouter un groupe",
+            "AddGroup": "ajouter",
             "AvailableMacros": "Macros disponibles",
             "ChangeMacroColor": "Modifier la couleur du bouton.",
             "Color": "Couleur",
@@ -1011,8 +1013,8 @@
             "Warning": "avertissement"
         },
         "MiscellaneousTab": {
-            "AddGroup": "ajouter un groupe",
-            "AddPreset": "ajouter un préréglage",
+            "AddGroup": "ajouter",
+            "AddPreset": "ajouter",
             "Color": "Couleur",
             "CreateGroup": "Créer un groupe",
             "CreatePreset": "Créer un préréglage",
@@ -1037,7 +1039,7 @@
             "Navigation": "Navigation"
         },
         "PresetsTab": {
-            "AddPreset": "ajouter un préréglage",
+            "AddPreset": "ajouter",
             "Cooldown": "Refroidissement",
             "CreateHeadline": "Créer un préréglage",
             "CustomGCode": "G-Code personnalisé",
@@ -1181,12 +1183,12 @@
         },
         "Update": "mise à jour",
         "WebcamsTab": {
-            "AddWebcam": "ajouter une caméra",
+            "AddWebcam": "ajouter",
             "CreateWebcam": "Créer une caméra",
             "EditCrowsnestConf": "Editer crowsnest.conf",
             "EditWebcam": "Editer caméra",
             "FlipWebcam": "Retourner l'image de la caméra:",
-            "HideFps": "Hide FPS counter",
+            "HideFps": "Masquer les performances",
             "Hlsstream": "Flux HLS",
             "Horizontally": "horizontalement",
             "IconBed": "Plateau",
@@ -1205,10 +1207,10 @@
             "NameAlreadyExists": "Le nom existe déjà",
             "Required": "requis",
             "Rotate": "Rotation",
-            "SaveWebcam": "Sauvegarde caméra",
+            "SaveWebcam": "Ajouter",
             "Service": "Service",
             "TargetFPS": "IPS cible",
-            "UpdateWebcam": "Mise à jour de la caméra",
+            "UpdateWebcam": "Mettre à Jour",
             "UrlSnapshot": "Aperçu de l'URL",
             "UrlStream": "Flux d'URL",
             "Uv4lMjpeg": "UV4L-MJPEG",

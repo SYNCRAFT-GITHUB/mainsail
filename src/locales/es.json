@@ -542,6 +542,8 @@
             "Allowed": "Permitida",
             "EstimatedExtrusion": "Extrusion estimada",
             "Extrude": "Extruir",
+            "Extruder": "Extrusor",
+            "Feeder": "Alimentador",
             "ExtruderControl": "Control del extrusor",
             "ExtruderTempTooLow": "Temp del extrusor. <",
             "ExtrusionFactor": "Factor de extrusión",

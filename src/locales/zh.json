@@ -546,6 +546,8 @@
             "CleanNozzle": "清洁喷嘴",
             "EstimatedExtrusion": "预计挤出量：",
             "Extrude": "挤出",
+            "Extruder": "挤出机",
+            "Feeder": "耗材喂料器",
             "ExtruderControl": "挤出机控制",
             "ExtruderTempTooLow": "挤出温度 <",
             "ExtrusionFactor": "挤出倍数",

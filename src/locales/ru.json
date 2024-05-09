@@ -534,6 +534,8 @@
             "Allowed": "Доступно",
             "EstimatedExtrusion": "Экструзия:",
             "Extrude": "Выдавить",
+            "Extruder": "Экструдер",
+            "Feeder": "Фидер",
             "ExtruderTempTooLow": "Температура экструзии <",
             "ExtrusionFactor": "Фактор экструзии (управление потоком)",
             "ExtrusionFeedrate": "Скорость экструзии",
@@ -1079,6 +1081,7 @@
         "UiSettingsTab": {
             "BedScrewsDialog": "Диалог регулировки винтов стола",
             "BedScrewsDialogDescription": "Показывать диалог помощника для BED_SCREWS_ADJUST.",
+            "BigThumbnailBackground": "Цвет фона изображения",
             "BoolBigThumbnail": "Большие миниатюры",
             "BoolBigThumbnailDescription": "Показывать большие миниатюры в панели состояния при печати.",
             "BoolHideUploadAndPrintButton": "Скрыть кнопку \"ЗАГРУЗИТЬ И НАПЕЧАТАТЬ\"",

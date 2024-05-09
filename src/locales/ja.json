@@ -197,7 +197,7 @@
         "Filesize": "ファイルサイズ",
         "Free": "空き",
         "FreeDisk": "空きディスク容量",
-        "GCodeFiles": "Gコードファイル",
+        "GCodeFiles": "ファイル",
         "GcodesRootDirectoryDoesntExists": "Gコードディレクトリが見つかりません。Klipperの構成で '[virtual_sdcard]' を確認してください。",
         "HiddenFiles": "非表示ファイル",
         "InvalidNameAlreadyExists": "この名前は既に存在します。別の名前を選択してください。",
@@ -531,6 +531,8 @@
             "Allowed": "許可",
             "EstimatedExtrusion": "推定押し出し量:",
             "Extrude": "押し出し",
+            "Extruder": "押出機",
+            "Feeder": "フィーダ",
             "ExtruderTempTooLow": "エクストルーダー温度 <",
             "ExtrusionFactor": "押し出し係数",
             "ExtrusionFeedrate": "押し出し速度",
@@ -836,6 +838,8 @@
             "Style": "スタイル",
             "ValueGreaterThan": "値は {value}よりも大きくなければなりません。",
             "ZOffsetIncrements": "Z軸オフセット増分(mm)",
+            "ZOffsetSaveOption": "Z-オフセット保存オプション",
+            "ZOffsetSaveOptionDescription": "Z-オフセットを保存するオプションを変更します。",
             "ZTiltAdjust": "Zチルト調整{isDefault}"
         },
         "DashboardTab": {

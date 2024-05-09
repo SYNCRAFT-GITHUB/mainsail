@@ -260,6 +260,13 @@
                     :dynamic-slot-width="true">
                     <v-switch v-model="showEstimatedExtrusionInfo" hide-details class="mt-0" />
                 </settings-row>
+                <v-divider class="my-2" />
+                <settings-row
+                    :title="$t('Settings.ControlTab.ExtAsFeeder')"
+                    :sub-title="$t('Settings.ControlTab.ExtAsFeederDescription')"
+                    :dynamic-slot-width="true">
+                    <v-switch v-model="setExtLabelAsFeeder" hide-details class="mt-0" />
+                </settings-row>
             </v-form>
         </v-card-text>
     </v-card>
@@ -313,8 +320,16 @@ export default class SettingsControlTab extends Mixins(BaseMixin, ControlMixin, 
         return this.$store.state.gui.control.hideDuringPrint ?? false
     }
 
+    get setExtLabelAsFeeder(): Boolean {
+        return this.$store.state.gui.control.setExtLabelAsFeeder ?? false
+    }
+
     set hideDuringPrint(newVal) {
         this.$store.dispatch('gui/saveSetting', { name: 'control.hideDuringPrint', value: newVal })
+    }
+
+    set setExtLabelAsFeeder(newVal) {
+        this.$store.dispatch('gui/saveSetting', { name: 'control.setExtLabelAsFeeder', value: newVal })
     }
 
     get actionOptions() {

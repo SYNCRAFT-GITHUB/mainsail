@@ -544,6 +544,8 @@
             "Allowed": "Zezwolone",
             "EstimatedExtrusion": "Przewidywana ekstruzja:",
             "Extrude": "Wysuń",
+            "Extruder": "Wytłaczarka",
+            "Feeder": "Podajnik",
             "ExtruderTempTooLow": "Temp. hotendu <",
             "ExtrusionFactor": "Współczynnik ekstruzji",
             "ExtrusionFeedrate": "Prędkość wysuwania",
