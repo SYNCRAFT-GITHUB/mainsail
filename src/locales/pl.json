@@ -860,6 +860,8 @@
             "EstimatedExtrusionInfo": "Pokazuj przewidywaną długość wytłaczania filamentu",
             "EstimatedExtrusionInfoDescription": "Pokazuj / Ukryj info dla wytłaczania bazującą na ilości i feedrate",
             "HideDuringPrint": "Ukryj sterowanie osiami podczas drukowania",
+            "ExtAsFeeder": "Wytłaczarki stają się podajnikami",
+            "ExtAsFeederDescription": "Idealny do modeli drukarek wyposażonych w dwa podajniki, ale tylko jedną wytłaczarkę.",
             "InvertXMovement": "Odwróć ruch osi X",
             "InvertYMovement": "Odwróć ruch osi Y",
             "InvertZMovement": "Odwróć ruch osi Z",

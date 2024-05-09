@@ -870,6 +870,8 @@
             "EstimatedExtrusionInfo": "Show estimated extrusion info",
             "EstimatedExtrusionInfoDescription": "Show / Hide info for estimated extrusions based on extrusion amount and feedrate",
             "HideDuringPrint": "Hide axis controls during print",
+            "ExtAsFeeder": "Extruders become Feeders",
+            "ExtAsFeederDescription": "Ideal for Printer models that have two feeders, but only a single Extruder.",
             "InvertXMovement": "Invert X axis movement direction",
             "InvertYMovement": "Invert Y axis movement direction",
             "InvertZMovement": "Invert Z axis movement direction",

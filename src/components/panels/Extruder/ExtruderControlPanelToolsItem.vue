@@ -6,7 +6,7 @@
         :style="buttonStyle"
         @click="doSend(macro.name)">
         <span v-if="color != null" class="_extruderColorState mr-1" :style="dotStyle" />
-        {{ cleanToolName ($t('Panels.ExtruderControlPanel.Headline').toString(),macro.name) }}
+        {{ cleanToolName (setExtLabelAsFeeder ? $t('Panels.ExtruderControlPanel.Feeder').toString() : $t('Panels.ExtruderControlPanel.Extruder').toString(), macro.name) }}
     </v-btn>
 </template>
 
@@ -31,6 +31,10 @@ export default class ExtruderControlPanel extends Mixins(BaseMixin, ControlMixin
         if (color === '' || color === 'undefined') return null
 
         return color
+    }
+
+    get setExtLabelAsFeeder(): Boolean {
+        return this.$store.state.gui.control.setExtLabelAsFeeder ?? false
     }
 
     cleanToolName(ext_name: String, tool_name: String): String {

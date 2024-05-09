@@ -872,6 +872,8 @@
             "EstimatedExtrusionInfo": "Mostra informazioni stimate sull'estrusione",
             "EstimatedExtrusionInfoDescription": "Mostra/Nascondi informazioni stimate in base alla quantità di estrusione e alla velocità di avanzamento",
             "HideDuringPrint": "Nascondi i controlli degli assi durante la stampa",
+            "ExtAsFeeder": "Gli estrusori diventano alimentatori",
+            "ExtAsFeederDescription": "Configurazione ideale per modelli di stampanti che hanno due alimentatori, ma solo un estrusore.",
             "InvertXMovement": "Inverti il movimento per l'asse X",
             "InvertYMovement": "Inverti il movimento per l'asse Y",
             "InvertZMovement": "Inverti il movimento per l'asse Z",

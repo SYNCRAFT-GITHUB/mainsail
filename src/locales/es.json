@@ -842,6 +842,8 @@
             "EstimatedExtrusionInfo": "Mostrar info de extrusion estimada",
             "EstimatedExtrusionInfoDescription": "Mostrar / Ocultar informacion de extrusion estimada basado en la candidad de extrusion y el avance",
             "HideDuringPrint": "Ocultar los controles de los ejes durante la impresión",
+            "ExtAsFeeder": "Las extrusoras se denominan alimentadores.",
+            "ExtAsFeederDescription": "Configuración ideal para modelos de impresoras que tienen dos alimentadores, pero solo un extrusor.",
             "InvertXMovement": "Invertir movimiento X",
             "InvertYMovement": "Invertir movimiento Y",
             "InvertZMovement": "Invertir movimiento Z",

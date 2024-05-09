@@ -873,6 +873,8 @@
             "EstimatedExtrusionInfo": "Zeige Info zur geschätzten Extrusion",
             "EstimatedExtrusionInfoDescription": "Anzeigen/ausblenden der Info zur geschätzten Extrusion, basierend auf Extrusionmenge und Extrusionsgeschwindigkeit",
             "HideDuringPrint": "Achsensteuerung während des Drucks ausblenden",
+            "ExtAsFeeder": "Extruder heißt jetzt \"Zubringer\".",
+            "ExtAsFeederDescription": "Ideal für Druckermodelle mit zwei Fütterern, aber nur einem Extruder.",
             "InvertXMovement": "Bewegung der X-Achse invertieren",
             "InvertYMovement": "Bewegung der Y-Achse invertieren",
             "InvertZMovement": "Bewegung der Z-Achse invertieren",

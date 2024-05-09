@@ -871,6 +871,8 @@
             "EstimatedExtrusionInfo": "显示预估的挤出信息",
             "EstimatedExtrusionInfoDescription": "显示/隐藏根据挤出量和进给速度预估的挤出信息",
             "HideDuringPrint": "打印期间隐藏轴控制",
+            "ExtAsFeeder": "挤出机变成喂料机",
+            "ExtAsFeederDescription": "非常适合具有两个进纸器但只有一个挤出机的打印机型号。",
             "InvertXMovement": "翻转X轴移动方向",
             "InvertYMovement": "翻转Y轴移动方向",
             "InvertZMovement": "翻转Z轴移动方向",

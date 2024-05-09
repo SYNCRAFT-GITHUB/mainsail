@@ -834,7 +834,7 @@
             "EstimatedExtrusionInfoDescription": "Mostra/Oculta informações sobre extrusões estimadas com base na quantidade e taxa de alimentação.",
             "HideDuringPrint": "Ocultar controles de eixos ao imprimir",
             "ExtAsFeeder": "Extrusores se tornam Alimentadores",
-            "ExtAsFeederDescription": "Configuração Ideal para SYncraft X1 onde os Extrusores são chamados de \"Alimentadores\" no painel do Extrusor.",
+            "ExtAsFeederDescription": "Configuração Ideal para Syncraft X1 onde os Extrusores são chamados de \"Alimentadores\" no painel do Extrusor.",
             "InvertXMovement": "Inverte direção do movimento eixo X",
             "InvertYMovement": "Inverte direção do movimento eixo Y",
             "InvertZMovement": "Inverte direção do movimento eixo Z",

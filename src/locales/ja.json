@@ -819,6 +819,8 @@
             "EstimatedExtrusionInfo": "推定押し出し情報を表示",
             "EstimatedExtrusionInfoDescription": "押し出し量と送り速度に基づいて推定された押し出し情報を表示または隠す。",
             "HideDuringPrint": "印刷中に軸コントロールを非表示にする",
+            "ExtAsFeeder": "押出機がフィーダーになります",
+            "ExtAsFeederDescription": "2つのフィーダーを持つが、エクストルーダーは1つだけのプリンターモデルに最適な構成です。",
             "InvertXMovement": "X軸の移動を反転",
             "InvertYMovement": "Y軸の移動を反転",
             "InvertZMovement": "Z軸の移動を反転",
