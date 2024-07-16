@@ -7,6 +7,7 @@ import History from '../pages/History.vue'
 import Timelapse from '../pages/Timelapse.vue'
 import Machine from '../pages/Machine.vue'
 import AdminAuth from '../pages/AdminAuth.vue'
+import SlicerDownload from '../pages/SlicerDownload.vue'
 import UpdatePage from '../pages/UpdatePage.vue'
 import { AsyncComponent, Component } from 'vue'
 
@@ -16,6 +17,7 @@ import {
     mdiConsoleLine,
     mdiGrid,
     mdiFileDocumentMultipleOutline,
+    mdiPackageVariant,
     mdiVideo3d,
     mdiHistory,
     mdiTimelapse,
@@ -118,6 +120,16 @@ const routes: AppRoute[] = [
         admin: false,
     },
     {
+        title: 'Slicer',
+        path: '/slicer',
+        icon: mdiPackageVariant,
+        component: SlicerDownload,
+        alwaysShow: true,
+        showInNavi: true,
+        position: 90,
+        admin: false,
+    },
+    {
         title: 'Timelapse',
         path: '/timelapse',
         icon: mdiTimelapse,
@@ -135,7 +147,7 @@ const routes: AppRoute[] = [
         component: Machine,
         alwaysShow: true,
         showInNavi: true,
-        position: 90,
+        position: 100,
         admin: true,
     },
     {
