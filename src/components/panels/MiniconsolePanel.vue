@@ -1,7 +1,7 @@
 <template>
     <panel
         v-if="socketIsConnected && klipperState !== 'disconnected'"
-        :icon="mdiConsoleLine"
+        :icon="mdiConsole"
         :title="$t('Panels.MiniconsolePanel.Headline')"
         :collapsible="true"
         card-class="miniconsole-panel"
@@ -105,7 +105,7 @@ import BaseMixin from '@/components/mixins/base'
 import { CommandHelp, VTextareaType } from '@/store/printer/types'
 import ConsoleTable from '@/components/console/ConsoleTable.vue'
 import Panel from '@/components/ui/Panel.vue'
-import { mdiChevronDoubleRight, mdiCog, mdiConsoleLine, mdiSend, mdiTrashCan } from '@mdi/js'
+import { mdiChevronDoubleRight, mdiCog, mdiConsole, mdiSend, mdiTrashCan } from '@mdi/js'
 import CommandHelpModal from '@/components/CommandHelpModal.vue'
 
 @Component({
@@ -117,7 +117,7 @@ import CommandHelpModal from '@/components/CommandHelpModal.vue'
 })
 export default class MiniconsolePanel extends Mixins(BaseMixin) {
     mdiTrashCan = mdiTrashCan
-    mdiConsoleLine = mdiConsoleLine
+    mdiConsole = mdiConsole
     mdiCog = mdiCog
     mdiSend = mdiSend
     mdiChevronDoubleRight = mdiChevronDoubleRight

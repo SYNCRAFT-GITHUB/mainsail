@@ -5,7 +5,7 @@ import { GuiMacrosStateMacrogroup } from '@/store/gui/macros/types'
 import {
     mdiArrowCollapseVertical,
     mdiCodeTags,
-    mdiConsoleLine,
+    mdiConsole,
     mdiDipSwitch,
     mdiEngine,
     mdiGamepad,
@@ -62,7 +62,7 @@ export default class DashboardMixin extends BaseMixin {
             case 'temperature':
                 return mdiThermometerLines
             case 'miniconsole':
-                return mdiConsoleLine
+                return mdiConsole
             case 'machine-settings':
                 return mdiEngine
             case 'extruder-control':

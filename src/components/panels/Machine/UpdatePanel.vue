@@ -3,7 +3,7 @@
         <panel
             v-if="enableUpdateManager"
             :title="$t('Machine.UpdatePanel.UpdateManager')"
-            :icon="mdiUpdate"
+            :icon="mdiCloudCogOutline"
             card-class="machine-update-panel"
             :collapsible="true">
             <template #buttons>
@@ -61,7 +61,7 @@ import Panel from '@/components/ui/Panel.vue'
 import UpdatePanelEntry from '@/components/panels/Machine/UpdatePanel/Entry.vue'
 import UpdatePanelEntrySystem from '@/components/panels/Machine/UpdatePanel/EntrySystem.vue'
 import UpdatePanelEntryAll from '@/components/panels/Machine/UpdatePanel/EntryAll.vue'
-import { mdiRefresh, mdiInformation, mdiCloseThick, mdiUpdate } from '@mdi/js'
+import { mdiRefresh, mdiInformation, mdiCloseThick, mdiCloudCogOutline } from '@mdi/js'
 import { ServerUpdateManagerStateGuiList } from '@/store/server/updateManager/types'
 import semver from 'semver'
 
@@ -72,7 +72,7 @@ export default class UpdatePanel extends Mixins(BaseMixin) {
     mdiRefresh = mdiRefresh
     mdiInformation = mdiInformation
     mdiCloseThick = mdiCloseThick
-    mdiUpdate = mdiUpdate
+    mdiCloudCogOutline = mdiCloudCogOutline
 
     get enableUpdateManager() {
         return this.$store.state.server.components.includes('update_manager')

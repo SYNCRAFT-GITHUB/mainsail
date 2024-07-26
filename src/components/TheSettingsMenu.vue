@@ -88,7 +88,7 @@ import {
     mdiCodeTags,
     mdiCog,
     mdiCogs,
-    mdiConsoleLine,
+    mdiConsole,
     mdiFileDocumentEditOutline,
     mdiFire,
     mdiMonitorDashboard,
@@ -174,7 +174,7 @@ export default class TheSettingsMenu extends Mixins(BaseMixin) {
                 title: this.$t('Settings.ControlTab.Control'),
             },
             {
-                icon: mdiConsoleLine,
+                icon: mdiConsole,
                 name: 'console',
                 title: this.$t('Settings.ConsoleTab.Console'),
             },

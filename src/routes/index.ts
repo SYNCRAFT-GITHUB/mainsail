@@ -14,7 +14,7 @@ import { AsyncComponent, Component } from 'vue'
 import {
     mdiMonitorDashboard,
     mdiWebcam,
-    mdiConsoleLine,
+    mdiConsole,
     mdiGrid,
     mdiFileDocumentMultipleOutline,
     mdiPackageVariant,
@@ -23,7 +23,7 @@ import {
     mdiTimelapse,
     mdiWrenchCog,
     mdiLock,
-    mdiCheckBold,
+    mdiCloudCogOutline,
 } from '@mdi/js'
 
 const routes: AppRoute[] = [
@@ -58,7 +58,7 @@ const routes: AppRoute[] = [
     {
         title: 'Console',
         path: '/console',
-        icon: mdiConsoleLine,
+        icon: mdiConsole,
         component: Console,
         alwaysShow: true,
         showInNavi: true,
@@ -112,11 +112,11 @@ const routes: AppRoute[] = [
     {
         title: 'Update',
         path: '/update',
-        icon: mdiCheckBold,
+        icon: mdiCloudCogOutline,
         component: UpdatePage,
         alwaysShow: true,
         showInNavi: true,
-        moonrakerComponent: 'history',
+        position: 90,
         admin: false,
     },
     {
@@ -124,9 +124,9 @@ const routes: AppRoute[] = [
         path: '/slicer',
         icon: mdiPackageVariant,
         component: SlicerDownload,
-        alwaysShow: true,
+        alwaysShow: false,
         showInNavi: true,
-        position: 90,
+        position: 100,
         admin: false,
     },
     {

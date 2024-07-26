@@ -5,7 +5,7 @@
         <v-card v-if="!form.bool" flat>
             <v-card-text>
                 <div class="d-flex align-center">
-                    <v-icon style="opacity: 0.7">{{ mdiConsoleLine }}</v-icon>
+                    <v-icon style="opacity: 0.7">{{ mdiConsole }}</v-icon>
                     <v-card-title class="mx-n2">
                         {{ $t('Settings.ConsoleTab.Console') }}
                     </v-card-title>
@@ -135,7 +135,7 @@ import { Component, Mixins, Watch } from 'vue-property-decorator'
 import BaseMixin from '../mixins/base'
 import SettingsRow from '@/components/settings/SettingsRow.vue'
 import { Debounce } from 'vue-debounce-decorator'
-import { mdiFilter, mdiPencil, mdiFilterOff, mdiDelete, mdiConsoleLine } from '@mdi/js'
+import { mdiFilter, mdiPencil, mdiFilterOff, mdiDelete, mdiConsole } from '@mdi/js'
 
 interface consoleForm {
     bool: boolean
@@ -153,7 +153,7 @@ export default class SettingsConsoleTab extends Mixins(BaseMixin) {
     mdiFilterOff = mdiFilterOff
     mdiPencil = mdiPencil
     mdiDelete = mdiDelete
-    mdiConsoleLine = mdiConsoleLine
+    mdiConsole = mdiConsole
 
     private form: consoleForm = {
         bool: false,
