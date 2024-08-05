@@ -709,6 +709,7 @@
             "Item": {
                 "HeaterBed": "Tabela",
                 "ChamberFan": "Izba",
+                "FilamentHeater": "Podgrzewacz",
                 "Extruder": "Wytłaczarki",
                 "Extruder1": "Wytłaczarki 1",
                 "Extruder2": "Wytłaczarki 2",

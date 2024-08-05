@@ -235,6 +235,8 @@ export default class TempChart extends Mixins(BaseMixin, ThemeMixin) {
                 return this.$t('Panels.TemperaturePanel.Item.HeaterBed')
             case "chamber_fan":
                 return this.$t('Panels.TemperaturePanel.Item.ChamberFan')
+            case "filament_heater":
+                return this.$t('Panels.TemperaturePanel.Item.FilamentHeater')
             default:
                 break;
         }

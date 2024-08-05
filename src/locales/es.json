@@ -686,6 +686,7 @@
             "Item": {
                 "HeaterBed": "Mesa",
                 "ChamberFan": "Cámara",
+                "FilamentHeater": "Calentador",
                 "Extruder": "Extrusor",
                 "Extruder1": "Extrusor 1",
                 "Extruder2": "Extrusor 2",

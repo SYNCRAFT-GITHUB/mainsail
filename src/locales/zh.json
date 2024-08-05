@@ -716,6 +716,7 @@
             "Item": {
                 "HeaterBed": "桌子",
                 "ChamberFan": "室",
+                "FilamentHeater": "加热器",
                 "Extruder": "挤出机",
                 "Extruder1": "挤出机1",
                 "Extruder2": "挤出机2",

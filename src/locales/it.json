@@ -717,6 +717,7 @@
             "Item": {
                 "HeaterBed": "Tavolo",
                 "ChamberFan": "Camera",
+                "FilamentHeater": "Stufa",
                 "Extruder": "Estrusore",
                 "Extruder1": "Estrusore 1",
                 "Extruder2": "Estrusore 2",

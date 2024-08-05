@@ -715,6 +715,7 @@
             "Item": {
                 "HeaterBed": "Heater Bed",
                 "ChamberFan": "Chamber Fan",
+                "FilamentHeater": "Fil. Heater",
                 "Extruder": "Extruder",
                 "Extruder1": "Extruder 1",
                 "Extruder2": "Extruder 2",

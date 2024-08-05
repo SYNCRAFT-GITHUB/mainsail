@@ -120,6 +120,10 @@ export default class TemperaturePanelListItem extends Mixins(BaseMixin) {
                 }
             case "extruder1":
                 return this.$t('Panels.TemperaturePanel.Item.Extruder2')
+            case "heater_generic filament_heater":
+                return this.$t('Panels.TemperaturePanel.Item.FilamentHeater')
+            case "temperature_sensor filament_heater":
+                return this.$t('Panels.TemperaturePanel.Item.FilamentHeater')
             case "heater_bed":
                 return this.$t('Panels.TemperaturePanel.Item.HeaterBed')
             case "temperature_sensor chamber_fan":

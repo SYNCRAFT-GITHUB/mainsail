@@ -672,6 +672,7 @@
             "Item": {
                 "HeaterBed": "Стол",
                 "ChamberFan": "Камера",
+                "FilamentHeater": "Обогреватель",
                 "Extruder": "Экструдер",
                 "Extruder1": "Экструдер 1",
                 "Extruder2": "Экструдер 2",

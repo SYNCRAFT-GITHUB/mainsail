@@ -718,6 +718,7 @@
             "Item": {
                 "HeaterBed": "Tisch",
                 "ChamberFan": "Kammer",
+                "FilamentHeater": "Heizung",
                 "Extruder": "Extruder",
                 "Extruder1": "Extruder 1",
                 "Extruder2": "Extruder 2",

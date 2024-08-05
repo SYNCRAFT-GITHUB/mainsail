@@ -669,6 +669,7 @@
             "Item": {
                 "HeaterBed": "テーブル",
                 "ChamberFan": "チャンバー",
+                "FilamentHeater": "ヒータ",
                 "Extruder": "押出機",
                 "Extruder1": "エクストルーダー1",
                 "Extruder2": "エクストルーダー2",
